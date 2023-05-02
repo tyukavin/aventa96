@@ -1,3 +1,9 @@
+@mixin _1420 {
+    @media (max-width: 1420px){
+        @content;
+    }
+}
+
 @mixin font-face($name, $file, $weight: 400, $style: normal) {
 	@font-face {
 		font-family: "#{$name}";
