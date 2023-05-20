@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+    "lang":"ru",
+    "title":"Страница не найдена",
+    "description":"Онлайн климат-маркет",
+    "favicon":"img/favicons/favicon",
+})
+
+<body>
+    @@include('components/page-blocks/_header.html')
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    404 ошибка
+                </li>
+            </ul>
+
+            <div class="not-found">
+                <picture>
+                    <source srcset="img/404.webp" type="image/webp" />
+                    <img src="img/404.png" srcset="img/404_2x.png 2x" class="not-found__img" alt="Страница не найдена" />
+                </picture>
+                <div class="not-found__content">
+                    <h1 class="not-found__title">404</h1>
+                    <p class="not-found__desc">
+                        Упс! Кажется, вы попали на страницу,<br>
+                        которой не существует.
+                    </p>
+                    <p>
+                        Но не переживайте, мы предлагаем вам охладиться и расслабиться с нашими кондиционерами.<br><br>
+                        Даже если страница не найдена, прохлада всегда с вами!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
