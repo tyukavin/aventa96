@@ -1,5 +1,21 @@
 $(document).ready(function() {
 
+    Fancybox.bind("[data-fancybox]", {
+        Thumbs: {
+            autoStart: false,
+        },
+        Toolbar: {
+            display: [
+                { id: "prev", position: "center" },
+                { id: "counter", position: "center" },
+                { id: "next", position: "center" },
+                "zoom",
+                "close",
+            ],
+        },
+        dragToClose: false
+    });
+
     const swiperHero = new Swiper(".swiper-hero", {
         loop: true,
         slidesPerView: 1,

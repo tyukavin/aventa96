@@ -1,0 +1,70 @@
+.fancybox__backdrop {
+    background-color: rgba(0, 0, 0, .6);
+}
+
+.popup {
+    background-color: #f8f8f8;
+    color: #000;
+    border-radius: 8px;
+    box-shadow: 6px 7px 17px 3px rgba(0, 0, 0, 0.25);
+    padding: 55px;
+    display: none;
+    min-width: 600px;
+
+    &__title {
+        font-size: 38px;
+        font-weight: 700;
+        margin-bottom: 15px;
+    }
+
+    &__desc {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    &__row {
+        margin-bottom: 30px;
+    }
+
+    &__footer {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    input {
+        border: 2px solid #F4F4F4;
+        border-radius: 10px;
+        background-color: #fff;
+        padding: 15px 20px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .btn-send {
+        background: #2F69FF;
+        border-radius: 8px;
+        padding: 20px;
+        color: #fff;
+        font-size: 20px;
+        font-weight: 600;
+        width: 100%;
+    }
+
+    .btn-link {
+        color: #017CC2;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}

@@ -53,8 +53,8 @@
                         <use xlink:href="../img/sprite.svg#include--user"></use>
                     </svg>
                     <div class="header-user__content">
-                        <a href="#" class="sign-in">Вход</a>
-                        <a href="#" class="sign-up">Регистрация</a>
+                        <button class="sign-in" data-fancybox="sign-in" data-src="#dialog-sign-in">Вход</button>
+                        <button class="sign-up" data-fancybox="sign-up" data-src="#dialog-sign-up">Регистрация</button>
                     </div>
                 </div>
             </div>
@@ -877,6 +877,55 @@
     </div>
 </footer>
 
+    <div class="popup" id="dialog-sign-in">
+    <h3 class="popup__title">Вход</h3>
+    <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signin-email">Email</label>
+            <input type="email" id="signin-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signin-pass">Пароль</label>
+            <input type="password" id="signin-pass" name="password">
+        </div>
+        <button class="btn btn-send">Отправить</button>
+        <div class="popup__footer">
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-up">Регистрация</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-up">
+    <h3 class="popup__title">Cоздать аккаунт</h3>
+    <div class="popup__desc">Создайте личный кабинет </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signup-name">ФИО</label>
+            <input type="text" id="signup-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="signup-phone">Номер телефона</label>
+            <input type="tel" id="signup-phone" name="phone">
+        </div>
+        <div class="popup__row">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass">Пароль</label>
+            <input type="password" id="signup-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass-approve">Подтвердите пароль</label>
+            <input type="password" id="signup-pass-approve" name="password-approve">
+        </div>
+        <button class="btn btn-send">Зарегистрироваться</button>
+        <div class="popup__footer">
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-in">Вход</button>
+        </div>
+    </form>
+</div>
     <script src="js/libs.min.js"></script>
 <script src="js/main.min.js"></script>
 
