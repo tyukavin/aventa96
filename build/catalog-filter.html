@@ -271,7 +271,64 @@
             </h1>
 
             <div class="catalog-filter">
-                <aside class="filters">2</aside>
+                <aside class="filters">
+                    <div class="calculator">
+                        <div class="calculator__title">
+                            <img src="img/calc.png" alt="Калькулятор">
+                            <span>Калькулятор производительности кондиционера</span>
+                        </div>
+
+                        <div class="calculator__row">
+                            <div class="calculator__col">
+                                <label class="label" for="square-room">Площадь помещения, м<sup>2</sup></label>
+                                <input type="number" id="square-room">
+                            </div>
+                            <div class="calculator__col">
+                                <label class="label" for="height-room">Высота потолка, м</label>
+                                <input type="number" id="height-room">
+                            </div>
+                        </div>
+
+                        <div class="calculator__row">
+                            <div class="calculator__col">
+                                <label class="label" for="count-tech">Кол-во ед. техники (компьютеров и TV)</label>
+                                <input type="number" id="count-tech">
+                            </div>
+                            <div class="calculator__col">
+                                <label class="label" for="count-people">Кол-во человек</label>
+                                <input type="number" id="count-people">
+                            </div>
+                        </div>
+
+
+                        <div class="calculator__row">
+                            <div class="calculator__col">
+                                <label for="" class="label">Солнце в помещении</label>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="daylong">
+                                    <label for="daylong">Весь день</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="morning">
+                                    <label for="morning">Утро/вечер</label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="none">
+                                    <label for="none">Нет</label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calculator__result">
+                            Холодопроизводительность не менее: <span id="calc-result">0.0</span> кВт
+                        </div>
+
+                        <div class="calculator__actions">
+                            <button class="btn">Подобрать</button>
+                        </div>
+                    </div>
+                </aside>
+
                 <section class="catalog-items">
                     <div class="catalog-items__img">
                         <img src="img/catalog/head-img.jpg" alt="">
@@ -317,7 +374,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-card__reviews"></div>
+                            <div class="catalog-card__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">2 отзыва</a>
+                            </div>
                             <a href="#" class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</a>
                             <div class="catalog-card__meta">
                                 <div class="availability availability--available">В наличии</div>
@@ -389,7 +449,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-card__reviews"></div>
+                            <div class="catalog-card__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">2 отзыва</a>
+                            </div>
                             <a href="#" class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</a>
                             <div class="catalog-card__meta">
                                 <div class="availability availability--available">В наличии</div>
@@ -454,7 +517,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-card__reviews"></div>
+                            <div class="catalog-card__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">2 отзыва</a>
+                            </div>
                             <a href="#" class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</a>
                             <div class="catalog-card__meta">
                                 <div class="availability availability--available">В наличии</div>
@@ -522,7 +588,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-card__reviews"></div>
+                            <div class="catalog-card__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">2 отзыва</a>
+                            </div>
                             <a href="#" class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</a>
                             <div class="catalog-card__meta">
                                 <div class="availability availability--available">В наличии</div>
@@ -591,7 +660,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-card__reviews"></div>
+                            <div class="catalog-card__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">2 отзыва</a>
+                            </div>
                             <a href="#" class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</a>
                             <div class="catalog-card__meta">
                                 <div class="availability availability--available">В наличии</div>
@@ -656,7 +728,10 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="catalog-card__reviews"></div>
+                            <div class="catalog-card__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">2 отзыва</a>
+                            </div>
                             <a href="#" class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</a>
                             <div class="catalog-card__meta">
                                 <div class="availability availability--available">В наличии</div>
@@ -685,6 +760,32 @@
                                     <li>Нагрев <span>от -15°С до +18°С</span></li>
                                 </ul>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-items__more">
+                        <button class="btn">
+                            <span>Смотреть еще</span>
+                            <img src="img/three-dots.svg" alt="icon">
+                        </button>
+                    </div>
+
+                    <div class="catalog-items__paginator">
+                        <div class="pagination">
+                            <!-- <button class="btn">Назад</button> -->
+                            <a  class="current" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <button class="btn">Дальше</button>
+                        </div>
+                        <div class="page-to">
+                            <form action="">
+                                <label for="page-to">Перейти на страницу</label>
+                                <input id="page-to" type="text">
+                                <button class="btn">Перейти</button>
+                            </form>
                         </div>
                     </div>
                 </section>
