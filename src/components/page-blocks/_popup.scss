@@ -126,6 +126,39 @@
         }
     }
 
+    .popup-card--mini {
+        justify-content: space-between;
+        margin: 0;
+
+        img {
+            width: 35%;
+        }
+
+        .popup-card__content {
+            margin-left: 30px;
+        }
+
+        .popup-card__title {
+            display: block;
+            margin-left: 0;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .popup-card__desc {
+            font-size: 18px;
+            margin-bottom: 35px;
+
+            span {
+                color: #2F69FF;
+            }
+        }
+
+        .btn-primary {
+            margin-left: 0 !important;
+        }
+    }
+
     .popup-actions {
         display: flex;
         align-items: center;
