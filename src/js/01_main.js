@@ -1,6 +1,23 @@
 $(document).ready(function() {
 
-    Fancybox.bind("[data-fancybox]", {
+    $("input[type='tel']").inputmask({"mask": "+7 (999) 999-99-99"});
+    $("input[type='email']").inputmask({
+        mask: "*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}]@*{1,20}[.*{1,20}][.*{1,20}][.*{1,20}][.*{1,20}]",
+        greedy: false,
+        onBeforePaste: function (pastedValue, opts) {
+            pastedValue = pastedValue.toLowerCase();
+            return pastedValue.replace("mailto:", "");
+        },
+        definitions: {
+            '*': {
+                validator: "[0-9A-Za-z!#$%&'*+/=?^_{|}~-]",
+                cardinality: 1,
+                casing: "lower"
+            }
+        }
+    });
+
+    const fancybox = Fancybox.bind("[data-fancybox]", {
         Thumbs: {
             autoStart: false,
         },
@@ -14,6 +31,11 @@ $(document).ready(function() {
             ],
         },
         dragToClose: false
+    });
+
+    $(".js-modal-close").click(function() {
+
+        Fancybox.close();
     });
 
     const swiperHero = new Swiper(".swiper-hero", {
@@ -32,7 +54,7 @@ $(document).ready(function() {
     });
 
     const swiperHits = new Swiper(".swiper-hits", {
-        loop: true,
+        loop: false,
         slidesPerView: 6,
         spaceBetween: 50,
 
