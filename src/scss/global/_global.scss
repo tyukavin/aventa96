@@ -127,32 +127,127 @@ img {
     @include no-btn();
 }
 
+.control {
+    position: relative;
+    width: 40%;
+
+    &::before {
+        position: absolute;
+        top: 7px;
+        left: 10px;
+        color: #000;
+        font-size: 12px;
+        opacity: .5;
+    }
+
+    &:first-of-type::before {
+        content: 'от';
+    }
+
+    &:last-of-type::before {
+        content: 'до';
+    }
+
+    .input {
+        padding-left: 30px;
+    }
+}
+
+.input {
+    border: 2px solid rgba(0, 0, 0, 0.4);
+    border-radius: 5px;
+    font-size: 14px;
+    padding: 4px 10px;
+    width: 100%;
+
+    &:focus {
+        border-color: #2F69FF;
+        outline: none;
+    }
+}
+
+.select {
+    border-color: rgba(0, 0, 0, 0.08);
+    border-width: 2px;
+    border-radius: 7px;
+    font-size: 14px;
+    padding: 6px 10px;
+    margin-bottom: 15px;
+    width: 100%;
+
+    &:last-child {
+        margin-bottom: 0;
+    }
+
+    &:focus {
+        border-color: #2F69FF;
+        outline: none;
+    }
+}
+
 .checkbox {
+    --size: 22px;
+
     cursor: pointer;
     display: block;
     position: relative;
     padding-left: 28px;
+    padding-left: calc(var(--size) + 8px);
+    margin-bottom: 12px;
+
+    &:last-of-type {
+        margin-bottom: 0;
+    }
 
     input[type="checkbox"] {
         display: none;
+
+        &:checked + label {
+            &::before {
+                background-color: #1997F4;
+                border-color: #2F69FF;
+            }
+        }
+    }
+
+    &:hover label::after {
+        color: #000;
+        opacity: .7;
     }
 
     label {
+        cursor: pointer;
         position: relative;
+        display: inline-flex;
+        align-items: center;
         font-size: 14px;
         font-weight: 600;
         font-size: 14px;
-        line-height: 20px;
+        height: var(--size);
+
+        &::before,
+        &::after {
+            position: absolute;
+            top: 0;
+            left: calc(-1 * (var(--size) + 8px));
+            height: var(--size);
+            width: var(--size);
+        }
 
         &::before {
             content: '';
-            border: 2px solid rgba(0, 0, 0, 0.5);
+            border: 2px solid rgba(0, 0, 0, 0.4);
             border-radius: 5px;
-            position: absolute;
-            top: 0;
-            left: -28px;
-            height: 20px;
-            width: 20px;
+        }
+
+        &::after {
+            content: '✓';
+            color: #fff;
+            font-size: calc(var(--size) - 10px);
+            line-height: 1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
     }
 }

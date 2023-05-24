@@ -82,4 +82,9 @@ $(document).ready(function() {
         $(".menu-item").removeClass("active");
         $(".menu-item").eq($(this).index()).addClass("active");
     });
+
+    $(".js-filter-collapse").click(function() {
+
+        $(this).parent().parent().find(".filter-section__content").toggleClass("filter-section__content--open");
+    });
 });
