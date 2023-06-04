@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Онлайн климат-маркет">
+
+	<!-- <link rel="shortcut icon" href="img/favicons/favicon.svg" type="image/svg+xml"> -->
+	<!-- <link rel="shortcut icon" href="img/favicons/favicon.webp" type="image/webp"> -->
+	<!-- <link rel="shortcut icon" href="img/favicons/favicon.png" type="image/x-icon"> -->
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Товар</title>
+</head>
+
+
+<body>
+    <header class="header">
+    <div class="header-sub">
+        <div class="container">
+            <div class="header-sub__left">
+                <a href="#" class="header-city">
+                    <img src="img/header/map.png" alt="">
+                    <span>Екатеренбург</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="header-sale">
+                    <img src="img/header/sale.png" alt="Акции и скидки">
+                    <span>Акции и скидки</span>
+                </a>
+            </div>
+
+            <div class="header-sub__right">
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="#">Доставка</a></li>
+                        <li><a href="#">Самовывоз</a></li>
+                        <li><a href="#">Способ оплаты</a></li>
+                        <li><a href="#">Гарантии</a></li>
+                        <li><a href="#">Установка кондиционеров</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-user">
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--user"></use>
+                    </svg>
+                    <div class="header-user__content">
+                        <button class="sign-in" data-fancybox="sign-in" data-src="#dialog-sign-in">Вход</button>
+                        <button class="sign-up" data-fancybox="sign-up" data-src="#dialog-sign-up">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/" title="Перейти на Главную страницу">
+                    <img src="img/logo.png" alt="Логотип Авента96">
+                </a>
+            </div>
+
+            <button class="header-catalog">
+                <img src="img/header/menu.svg" alt="">
+                <span>Каталог товаров</span>
+            </button>
+
+            <div class="header-search">
+                <form action="" class="header-search__form">
+                    <input type="text" placeholder="Поиск по сайту">
+                </form>
+            </div>
+
+            <div class="header-phones">
+                <div class="header-phones__row">
+                    <a href="tel:+73432879474" class="header-phones__link">7 (343) 287-94-74</a>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down-phone"></use>
+                    </svg>
+                </div>
+                <p>
+                    Звоните нам до 18.00<br>
+                    Заказ оформляйте на сайте
+                </p>
+                <div class="phones-modal">
+                    <div class="phones-modal__title">Телефон</div>
+
+                    <p class="phones-modal__desc">
+                        Работаем с 15:00 до 20:00<br>с Пн по Пт<br>
+                        Заказ оформляйте на сайте
+                    </p>
+
+                    <a href="tel:+73432879474" class="phones-modal__tel">7 (343) 287-94-74</a>
+
+                    <div class="phones-modal__sub-title">По всем вопросам:</div>
+                    <a href="mailto:info@aventa96.ru" class="phones-modal__mail">info@aventa96.ru</a>
+
+                    <div class="phones-modal__sub-title">Адреса офиса:</div>
+                    <p>ул. Майкопская 10, оф. 502А (5 этаж)</p>
+
+                    <div class="phones-modal__socials">
+                        <a href="#" class="link-vk">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#" class="link-ok">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+
+                    <button class="btn">
+                        <img src="img/header/envelope.svg" alt="">
+                        <span>Обратная связь</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__links">
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/sravni.png" alt="Сравнение товаров" height="38" width="38">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Сравнить</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/fav.png" alt="Избранные товары" height="45" width="45">
+                        <div class="header-link__count header-link__count--fav">0</div>
+                    </div>
+                    <div class="header-link__caption">Избранное</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/cart.svg" alt="Корзина" height="33" width="36">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Корзина</div>
+                </a>
+            </div>
+
+            <a href="#" class="header-cart">0 ₽</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <aside class="menu-aside">
+                <a href="#" class="menu-aside__item active">Кондиционирование</a>
+                <a href="#" class="menu-aside__item">Водоснабжение и отопление</a>
+                <a href="#" class="menu-aside__item">Тепловое оборудование</a>
+                <a href="#" class="menu-aside__item">Очистители и увлажнители</a>
+                <a href="#" class="menu-aside__item">Вентиляция</a>
+                <a href="#" class="menu-aside__item">Тёплый пол и греющий кабель</a>
+            </aside>
+            <div class="menu-content">
+                <div class="menu-item active">
+                    <div class="menu-item__title">Кондиционирование</div>
+                    <div class="menu-item__wrap">
+                        <ul class="menu-item__list">
+                            <li><a href="#">Настенные кондиционеры</a></li>
+                            <li><a href="#">Облачные кондиционеры</a></li>
+                            <li><a href="#">Мобильные кондиционеры</a></li>
+                            <li><a href="#">Оконные кондиционеры</a></li>
+                            <li><a href="#">Мульти-сплит системы</a></li>
+                            <li><a href="#">Кассетные кондиционеры</a></li>
+                            <li><a href="#">Напольные кондиционеры</a></li>
+                            <li><a href="#">Канальные кондиционеры</a></li>
+                            <li><a href="#">Напольно-потолочные кондиционеры</a></li>
+                            <li><a href="#">Напольно-канальные кондиционеры</a></li>
+                            <li><a href="#">Колонные кондиционеры</a></li>
+                            <li><a href="#">Компрессорно-конденсаторные кондиционеры</a></li>
+                            <li><a href="#">Аксессуары для кондиционеров</a></li>
+                            <li><a href="#">Для монтажа кондиционеров</a></li>
+                        </ul>
+                        <div class="menu-item__brands">
+                            <div class="menu-item__brands-title">По производителям</div>
+                            <ul class="menu-item__brands-list">
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item__logos">
+                            <img src="img/header/brands-1.png" alt="">
+                            <img src="img/header/brands-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Водоснабжение и отопление</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тепловое оборудование</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Очистители и увлажнители</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Вентиляция</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тёплый пол и греющий кабель</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="catalog.html">Каталог климатической техники</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="sub-catalog.html">Кондиционирование</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="catalog-filter.html">Настенные кондиционеры</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Кондиционер SHUFT SFTG-06HN1 FTG-06HN1FDDA
+                </li>
+            </ul>
+
+            <div class="card">
+                <div class="card-item">
+                    <div class="card-item__wrapper">
+                        <div class="card-img">
+                            <div class="card-img-sm">
+                                <div class="card-img-sm__item js-thumb-pic">
+                                    <img src="img/card/card-item.jpg" alt="">
+                                </div>
+                                <div class="card-img-sm__item js-thumb-pic">
+                                    <img src="img/card/card-item-2.jpg" alt="">
+                                </div>
+                                <div class="card-img-sm__item js-thumb-pic">
+                                    <img src="img/card/card-item-3.jpg" alt="">
+                                </div>
+                                <div class="card-img-sm__item js-thumb-pic">
+                                    <img src="img/card/card-item-4.jpg" alt="">
+                                </div>
+                                <div class="card-img-sm__item js-thumb-pic">
+                                    <img src="img/card/card-item-5.jpg" alt="">
+                                </div>
+                            </div>
+
+                            <div class="card-img-lg">
+                                <img src="img/card/card-item.jpg" alt="">
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-info__reviews">
+                                <img src="img/stars.png" alt="">
+                                <a href="#">23 отзыва</a>
+                            </div>
+
+                            <h1>Кондиционер SHUFT SFTG-06HN1 FTG-06HN1FDDA</h1>
+
+                            <div class="card-info__more">
+                                <div class="availability availability--notpay">
+                                    Нет в продаже
+                                </div>
+                                <div class="article">Артикул: 1021-14689</div>
+                                <a href="#" class="link link--quastion">Задать вопрос по товару</a>
+                            </div>
+
+                            <table class="card-delivery">
+                                <tr>
+                                    <td>
+                                        <span class="highlight">Самовывоз</span>
+                                    </td>
+                                    <td>Екатеринбург</td>
+                                    <td>
+                                        c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <span class="highlight">Доставка</span>
+                                    </td>
+                                    <td>Екатеринбург</td>
+                                    <td>
+                                        c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                    </td>
+                                </tr>
+                                <tr class="card-delivery__footer">
+                                    <td colspan="3">Стоимость доставки по г. Екатеринбургу: <span class="large">402 ₽</span></td>
+                                </tr>
+                            </table>
+
+                            <div class="card-prices">
+                                <div class="price price--current">535 402 ₽</div>
+                                <div class="price price--old">545 402 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <aside class="related">
+                    <div class="related__title">Сопутствующие товары</div>
+                    <div class="related__content">
+                        <div class="hits-item">
+                            <div class="hits-item__img">
+                                <img src="img/hit-item.png" alt="">
+                            </div>
+                            <a href="#" class="hits-item__title">Кондиционер SHUFT SFTG-06HN1</a>
+                            <div class="availability availability--available">
+                                В наличии
+                            </div>
+                            <div class="prices">
+                                <div class="prices__old">5 531.30 ₽</div>
+                                <div class="prices__current prices--new">3 321.45 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="hits-item">
+                            <div class="hits-item__img">
+                                <img src="img/hit-item.png" alt="">
+                            </div>
+                            <a href="#" class="hits-item__title">Кондиционер SHUFT SFTG-06HN1</a>
+                            <div class="availability availability--notpay">
+                                Нет в продаже
+                            </div>
+                            <div class="prices">
+                                <div class="prices__old">5 531.30 ₽</div>
+                                <div class="prices__current prices--new">3 321.45 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="hits-item">
+                            <div class="hits-item__img">
+                                <img src="img/hit-item.png" alt="">
+                            </div>
+                            <a href="#" class="hits-item__title">Кондиционер SHUFT SFTG-06HN1</a>
+                            <div class="availability availability--available">
+                                В наличии
+                            </div>
+                            <div class="prices">
+                                <div class="prices__current">3 321.45 ₽</div>
+                            </div>
+                        </div>
+
+                        <div class="hits-item">
+                            <div class="hits-item__img">
+                                <img src="img/hit-item.png" alt="">
+                            </div>
+                            <a href="#" class="hits-item__title">Кондиционер SHUFT SFTG-06HN1</a>
+                            <div class="availability availability--available">
+                                В наличии
+                            </div>
+                            <div class="prices">
+                                <div class="prices__current">3 321.45 ₽</div>
+                            </div>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-content__inner">
+                <div class="footer-contacts">
+                    <a href="#" class="logo">
+                        <img src="img/logo-footer.png" alt="">
+                    </a>
+                    <p>
+                        <span>Телефон:</span> <a href="tel:+73432879474">7 (343) 287-94-74</a>
+                    </p>
+                    <p>
+                        <span>Адрес:</span> 620141 Екатеринбург, ул. Майкопская, д. 10, оф. 502А (5 этаж)
+                    </p>
+                    <p>
+                        <span>График:</span> Пн-Пт: 10:00 - 18:00 Сб-Вс:&nbsp;выходной
+                    </p>
+                    <p>
+                        <span>Email:</span> <a href="mailto:info@aventa96.ru">info@aventa96.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer-help">
+                    <div class="footer__title">Помощь покупателю</div>
+                    <nav class="footer-help__menu">
+                        <ul>
+                            <li><a href="#">Доставка</a></li>
+                            <li><a href="#">Самовывоз</a></li>
+                            <li><a href="#">Оплата</a></li>
+                            <li><a href="#">Гарантии</a></li>
+                            <li><a href="#">Как заказать</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Информация о компании</a></li>
+                            <li><a href="#">Официальный дилер</a></li>
+                            <li><a href="#">Поставщикам</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="#">Контакты</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Установака кондиционеров</a></li>
+                            <li><a href="#">Вопрос-ответ ( FAQ )</a></li>
+                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="#">Персональные данные</a></li>
+                            <li><a href="#">Публичная оферта</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-pay">
+                    <div class="footer__title">Доступные способы оплаты</div>
+                    <div class="footer-pay__line">
+                        <img src="img/footer/footer-money.png" alt="Наличные">
+                        <img src="img/footer/footer-mir.png" alt="Картой МИР">
+                        <img src="img/footer/footer-visa.png" alt="Картой VISA">
+                        <img src="img/footer/footer-mc.png" alt="Картой MasterCard">
+                    </div>
+                    <div class="footer-pay__reviews footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/otziv-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/otziv-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-pay__socials footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        © 2009-2023. Aventa96.ru - онлайн климат-маркет Екатеринбурга. Все права защищены.
+    </div>
+</footer>
+
+    <div class="popup" id="dialog-sign-in">
+    <h3 class="popup__title">Вход</h3>
+    <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signin-email">Email</label>
+            <input type="email" id="signin-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signin-pass">Пароль</label>
+            <input type="password" id="signin-pass" name="password">
+        </div>
+        <button class="btn btn-send">Отправить</button>
+        <div class="popup__footer">
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-up">Регистрация</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-up">
+    <h3 class="popup__title">Cоздать аккаунт</h3>
+    <div class="popup__desc">Создайте личный кабинет </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signup-name">ФИО</label>
+            <input type="text" id="signup-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="signup-phone">Номер телефона</label>
+            <input type="tel" id="signup-phone" name="phone">
+        </div>
+        <div class="popup__row">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass">Пароль</label>
+            <input type="password" id="signup-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass-approve">Подтвердите пароль</label>
+            <input type="password" id="signup-pass-approve" name="password-approve">
+        </div>
+        <button class="btn btn-send">Зарегистрироваться</button>
+        <div class="popup__footer">
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-in">Вход</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-cart">
+    <h3 class="popup__title">Товар добавлен в корзину</h3>
+
+    <div class="popup-card">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+        <div class="popup-card__count">
+            <button class="btn">-</button>
+            <span>1</span>
+            <button class="btn">+</button>
+        </div>
+        <div class="popup-card__price">110 325 ₽</div>
+    </div>
+
+    <div class="popup-actions">
+        <div class="popup-actions__info">
+            В корзине
+            <span>23 товара</span>
+        </div>
+
+        <div class="popup-actions__buttons">
+            <button class="btn btn-secondary js-modal-close">Продолжить покупки</button>
+            <a href="#" class="btn btn-primary">Перейти в корзину</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-compare">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>сравнение</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-favorite">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>избранное</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/libs.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

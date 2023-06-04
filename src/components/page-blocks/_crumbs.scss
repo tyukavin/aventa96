@@ -8,8 +8,9 @@
     align-items: center;
 
     &__item {
-        font-size: 15px;
+        font-size: 14px;
         font-weight: 600;
+        line-height: 1;
         margin-right: 10px;
 
         &:not(:last-child) {
