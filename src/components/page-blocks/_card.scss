@@ -95,7 +95,7 @@
     display: flex;
     align-items: baseline;
     gap: 12px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
 
     .price {
         line-height: 1;
@@ -128,12 +128,13 @@
 
 .card-img {
     display: flex;
-    height: 450px;
+    height: 410px;
     gap: 25px;
     flex: none;
 
     img {
         height: 100%;
+        object-fit: contain;
     }
 }
 
@@ -173,7 +174,7 @@
 
 .card-img-lg {
     height: 100%;
-    width: 450px;
+    width: 420px;
 }
 
 .related {
@@ -194,5 +195,16 @@
         flex-wrap: wrap;
         flex-direction: column;
         gap: 25px;
+    }
+}
+
+.card-actions {
+    display: flex;
+
+    &__buttons {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        width: 300px;
     }
 }

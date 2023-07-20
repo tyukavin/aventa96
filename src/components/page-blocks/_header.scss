@@ -435,9 +435,9 @@
     }
 
     .btn {
-        @include no-btn();
         color: #fff;
         border-radius: 6px;
+        border: none;
         font-size: 14px;
         font-weight: 700;
         background-color: #2F69FF;

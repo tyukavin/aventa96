@@ -126,6 +126,39 @@ img {
 
 .btn {
     @include no-btn();
+
+    --bg-color: 100, 100%, 100%;
+    --bg-color-hover: #{'hsl(var(--bg-color), 85%)'};
+    --text-color: inherit;
+
+    border-radius: 5px;
+    background-color: #{'hsl(var(--bg-color))'};
+    border: 2px solid;
+    border-color: #{'hsl(var(--bg-color))'};
+    color: var(--text-color);
+    font-weight: 600;
+    text-align: center;
+    transition: .15s;
+
+    &:hover {
+        background-color: var(--bg-color-hover);
+    }
+
+    &-xs {
+        font-size: 13px;
+        padding: 10px;
+    }
+
+    &-large {
+        border-radius: 8px;
+        font-size: 20px;
+        padding: 18px;
+    }
+
+    &-primary {
+        --bg-color: 223, 100%, 59%;
+        --text-color: #fff;
+    }
 }
 
 .control {
@@ -408,17 +441,8 @@ img {
     }
 
     .btn {
-        @include no-btn();
         background-color: #fff;
         border: 2px solid #FE5800;
-        border-radius: 5px;
-        color: #070707;
-        font-weight: 600;
-        font-size: 13px;
-        padding: 10px 20px;
-        width: 100%;
-        text-align: center;
-        transition: .15s;
 
         &:hover {
             color: #fff;
@@ -428,6 +452,8 @@ img {
 
     &__action {
         opacity: 0;
+        display: flex;
+        flex-direction: column;
     }
 }
 
@@ -616,7 +642,6 @@ img {
     }
 
     .btn {
-        @include no-btn();
         background-color: #2F69FF;
         border-radius: 4px;
         color: #fff;

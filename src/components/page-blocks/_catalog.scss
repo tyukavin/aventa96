@@ -350,7 +350,6 @@
         transition: opacity .15s;
 
         .more-action {
-            @include no-btn();
             background-color: #fff;
             box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.25);
             border-radius: 6px;
@@ -475,7 +474,6 @@
         margin-bottom: 15px;
 
         .btn {
-            @include no-btn();
             border: 2px solid;
             border-radius: 8px;
             flex: 1;

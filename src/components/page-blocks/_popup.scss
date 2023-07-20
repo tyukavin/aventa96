@@ -54,18 +54,10 @@
         width: 100%;
     }
 
-    .btn-send {
-        background: #2F69FF;
-        border-radius: 8px;
-        padding: 20px;
-        color: #fff;
-        font-size: 20px;
-        font-weight: 600;
-        width: 100%;
-    }
-
     .btn-link {
+        --bg-color: transparent;
         color: #017CC2;
+        border: none;
 
         &:hover {
             text-decoration: underline;
@@ -116,6 +108,7 @@
 
                 &:hover {
                     background-color: #AAA7FE;
+                    color: #fff;
                 }
             }
         }
