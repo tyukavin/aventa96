@@ -17,7 +17,7 @@ $(document).ready(function() {
         }
     });
 
-    const fancybox = Fancybox.bind("[data-fancybox]", {
+    Fancybox.bind("[data-fancybox]", {
         Thumbs: {
             autoStart: false,
         },
@@ -86,5 +86,13 @@ $(document).ready(function() {
     $(".js-filter-collapse").click(function() {
 
         $(this).parent().parent().find(".filter-section__content").toggleClass("filter-section__content--open");
+    });
+
+    $(".js-thumb-pic").click(function() {
+
+        $(".js-thumb-pic").removeClass("active");
+        $(this).addClass("active");
+        $(".js-card-pic img").removeClass("active");
+        $(".js-card-pic img").eq($(this).index()).addClass("active");
     });
 });

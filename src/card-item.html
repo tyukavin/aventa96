@@ -34,7 +34,7 @@
                     <div class="card-item__wrapper">
                         <div class="card-img">
                             <div class="card-img-sm">
-                                <div class="card-img-sm__item js-thumb-pic">
+                                <div class="card-img-sm__item active js-thumb-pic">
                                     <img src="img/card/card-item.jpg" alt="">
                                 </div>
                                 <div class="card-img-sm__item js-thumb-pic">
@@ -51,10 +51,15 @@
                                 </div>
                             </div>
 
-                            <div class="card-img-lg">
-                                <img src="img/card/card-item.jpg" alt="">
+                            <div class="card-img-lg js-card-pic">
+                                <img src="img/card/card-item.jpg" class="active" data-fancybox="card" data-src="img/card/card-item.jpg" alt="">
+                                <img src="img/card/card-item-2.jpg" alt="">
+                                <img src="img/card/card-item-3.jpg" alt="">
+                                <img src="img/card/card-item-4.jpg" alt="">
+                                <img src="img/card/card-item-5.jpg" alt="">
                             </div>
                         </div>
+
                         <div class="card-info">
                             <div class="card-info__reviews">
                                 <img src="img/stars.png" alt="">
@@ -102,7 +107,7 @@
 
                             <div class="card-actions">
                                 <div class="card-actions__count">
-                                    <div class="popup-card__count">
+                                    <div class="counter-actions">
                                         <button class="btn">-</button>
                                         <span>1</span>
                                         <button class="btn">+</button>
@@ -110,11 +115,31 @@
                                 </div>
 
                                 <div class="card-actions__buttons">
-                                    <button class="btn">Купить</button>
-                                    <button class="btn">долями</button>
-                                    <button class="btn">В рассрочку</button>
+                                    <button class="btn btn-orange primary">Купить</button>
+                                    <button class="btn btn-black primary">долями</button>
+                                    <button class="btn btn-purple secondary">В рассрочку</button>
                                 </div>
                             </div>
+                        </div>
+                    </div>
+
+                    <div class="card-content">
+                        <aside class="card-content__aside">
+                            <div class="card-action-tabs">
+                                <button class="btn">Характеристики</button>
+                                <button class="btn">Описание</button>
+                                <button class="btn">Отзывы</button>
+                                <button class="btn">Инструкция</button>
+                            </div>
+                            <div class="card-sert">
+                                <img src="img/card/sert.png" data-fancybox="sert" alt="">
+                            </div>
+                        </aside>
+                        <div class="card-tabs">
+                            <div class="card-tabs__item">1</div>
+                            <div class="card-tabs__item">2</div>
+                            <div class="card-tabs__item">3</div>
+                            <div class="card-tabs__item">4</div>
                         </div>
                     </div>
                 </div>

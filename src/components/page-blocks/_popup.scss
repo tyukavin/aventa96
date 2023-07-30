@@ -88,31 +88,6 @@
             text-decoration: none;
         }
 
-        &__count {
-            display: flex;
-            align-items: center;
-            margin-left: auto   ;
-
-            span {
-                font-weight: 500;
-                margin: 0 15px;
-            }
-
-            .btn {
-                border: 1px solid #AAA7FE;
-                border-radius: 5px;
-                height: 35px;
-                width: 35px;
-                font-size: 22px;
-                font-weight: 600;
-
-                &:hover {
-                    background-color: #AAA7FE;
-                    color: #fff;
-                }
-            }
-        }
-
         &__price {
             font-weight: 700;
             margin-left: auto;
