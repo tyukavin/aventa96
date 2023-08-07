@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Самовывоз",
+"description":"Онлайн климат-маркет",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+    @@include('components/page-blocks/_header.html')
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Самовывоз
+                </li>
+            </ul>
+
+            <div class="overview">
+                @@include('components/page-blocks/_overview-tabs.html')
+
+                <div class="overview-content">
+                    <h1 class="title-page">Самовывоз</h1>
+                    <div class="overview-toggle active">
+                        <div class="overview-toggle-btn">Физическим лицам</div>
+                        <div class="overview-toggle-content">
+                            <p class="selection">
+                                Самовывоз возможен только после оплаты заказа. Чтобы Вам было удобней, мы бесплатно привезем
+                                Ваш заказ в любой пункт выдачи СДЭК в Екатеринбурге.
+                            </p>
+                            <p class="selection">
+                                Выберите ближайший к Вам пункт ПВЗ и <a href="#">списка</a> и укажите его адрес в
+                                комментарии к заказу.
+                            </p>
+                            <p>
+                                Срок поступления заказа в выбранный ПВЗ с момента оформления: тот-же или следующий рабочий
+                                день после 15-00 если оплата поступила до 12-00. (относится к товару со статусом "В
+                                наличии")
+                            </p>
+                            <p>
+                                Оплата наложенным платежом в пунктах выдачи заказов СДЭК не принимается. Удобнее всего
+                                оплату произвести банковской картой онлайн на нашем сайте. <a href="#">Процесс оплаты картой
+                                    на сайте.</a>
+                                Или другим <a href="#">способом</a>.
+                            </p>
+                            <p>
+                                Оплата картой онлайн будет открыта менеджером после резервирования товара за Вами. Ссылка
+                                отправляется клиенту на электронную почту, указанную при оформлении заказа (рекомендуется
+                                проверять папку "спам"), а также доступна в личном кабинете.
+                            </p>
+                            <p>
+                                Отгрузка очень габаритных товаров и весом более 60 кг осуществляется с ул. Майкопская, 10,
+                                так же после уведомления о готовности заказа к выдаче.
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="overview-toggle">
+                        <div class="overview-toggle-btn">Юридическим лицам</div>
+                        <div class="overview-toggle-content">
+                            <p>
+                                Самовывоз возможен после уведомления о готовности заказа к выдаче в тот-же или следующий
+                                рабочий день после 15-00 если оплата поступила до 12-00. (относится к товару со статусом "В
+                                наличии")
+                            </p>
+                            <p>
+                                Адрес самовывоза: Ул. Майкопская, 10 (документы получать в оф. 502А).
+                                <a href="#">Посмотреть на карте.</a>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_includes.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

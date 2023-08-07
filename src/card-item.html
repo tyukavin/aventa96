@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
-    "lang":"ru",
-    "title":"Товар",
-    "description":"Онлайн климат-маркет",
-    "favicon":"img/favicons/favicon",
+"lang":"ru",
+"title":"Товар",
+"description":"Онлайн климат-маркет",
+"favicon":"img/favicons/favicon",
 })
 
 <body>
@@ -33,30 +33,36 @@
                 <div class="card-item">
                     <div class="card-item__wrapper">
                         <div class="card-img">
-                            <div class="card-img-sm">
-                                <div class="card-img-sm__item active js-thumb-pic">
-                                    <img src="img/card/card-item.jpg" alt="">
+                            <div class="card-img__inner">
+                                <div class="card-img-sm">
+                                    <div class="card-img-sm__item active js-thumb-pic">
+                                        <img src="img/card/card-item.jpg" alt="">
+                                    </div>
+                                    <div class="card-img-sm__item js-thumb-pic">
+                                        <img src="img/card/card-item-2.jpg" alt="">
+                                    </div>
+                                    <div class="card-img-sm__item js-thumb-pic">
+                                        <img src="img/card/card-item-3.jpg" alt="">
+                                    </div>
+                                    <div class="card-img-sm__item js-thumb-pic">
+                                        <img src="img/card/card-item-4.jpg" alt="">
+                                    </div>
+                                    <div class="card-img-sm__item js-thumb-pic">
+                                        <img src="img/card/card-item-5.jpg" alt="">
+                                    </div>
                                 </div>
-                                <div class="card-img-sm__item js-thumb-pic">
-                                    <img src="img/card/card-item-2.jpg" alt="">
-                                </div>
-                                <div class="card-img-sm__item js-thumb-pic">
-                                    <img src="img/card/card-item-3.jpg" alt="">
-                                </div>
-                                <div class="card-img-sm__item js-thumb-pic">
-                                    <img src="img/card/card-item-4.jpg" alt="">
-                                </div>
-                                <div class="card-img-sm__item js-thumb-pic">
-                                    <img src="img/card/card-item-5.jpg" alt="">
+
+                                <div class="card-img-lg js-card-pic">
+                                    <img src="img/card/card-item.jpg" class="active" data-fancybox="card" alt="">
+                                    <img src="img/card/card-item-2.jpg" data-fancybox="card" alt="">
+                                    <img src="img/card/card-item-3.jpg" data-fancybox="card" alt="">
+                                    <img src="img/card/card-item-4.jpg" data-fancybox="card" alt="">
+                                    <img src="img/card/card-item-5.jpg" data-fancybox="card" alt="">
                                 </div>
                             </div>
 
-                            <div class="card-img-lg js-card-pic">
-                                <img src="img/card/card-item.jpg" class="active" data-fancybox="card" data-src="img/card/card-item.jpg" alt="">
-                                <img src="img/card/card-item-2.jpg" alt="">
-                                <img src="img/card/card-item-3.jpg" alt="">
-                                <img src="img/card/card-item-4.jpg" alt="">
-                                <img src="img/card/card-item-5.jpg" alt="">
+                            <div class="card-img-promocode">
+                                <img src="img/promocode.png" alt="">
                             </div>
                         </div>
 
@@ -126,20 +132,85 @@
                     <div class="card-content">
                         <aside class="card-content__aside">
                             <div class="card-action-tabs">
-                                <button class="btn">Характеристики</button>
-                                <button class="btn">Описание</button>
-                                <button class="btn">Отзывы</button>
-                                <button class="btn">Инструкция</button>
+                                <button class="btn active js-card-btn-tab">Характеристики</button>
+                                <button class="btn js-card-btn-tab">Описание</button>
+                                <button class="btn js-card-btn-tab">Отзывы</button>
+                                <button class="btn js-card-btn-tab">Инструкция</button>
                             </div>
                             <div class="card-sert">
                                 <img src="img/card/sert.png" data-fancybox="sert" alt="">
                             </div>
                         </aside>
                         <div class="card-tabs">
-                            <div class="card-tabs__item">1</div>
-                            <div class="card-tabs__item">2</div>
-                            <div class="card-tabs__item">3</div>
-                            <div class="card-tabs__item">4</div>
+                            <div class="card-tabs__item active js-card-tab">
+                                <p>
+                                    Тип: настенная сплит-система с зимним комплектом до -40°С (охлаждение).
+                                    Озонобезопасный фреон R410A. Режимы работы: охлаждение, обогрев, вентиляция,
+                                    осушение. Мощность в режиме охлаждения: 6.01 кВт. Мощность в режиме обогрева: 6.35
+                                    кВт. Режим быстрого охлаждения.
+                                    Режим комфортного сна. Стандартный воздушный фильтр. Функция самодиагностики.
+                                    Авторестарт. Класс энергоэффективности: A
+                                </p>
+                                <div class="features">
+                                    <div class="features-dashboard">
+                                        <h3>Общие характеристики</h3>
+                                        <div class="features-dashboard__row">
+                                            <div class="features-dashboard__left">Родина бренда</div>
+                                            <div class="features-dashboard__right">Япония</div>
+                                        </div>
+                                        <div class="features-dashboard__row">
+                                            <div class="features-dashboard__left">Страна-производитель</div>
+                                            <div class="features-dashboard__right">Малайзия</div>
+                                        </div>
+                                        <div class="features-dashboard__row">
+                                            <div class="features-dashboard__left">Серия</div>
+                                            <div class="features-dashboard__right">FTYN-L/RYN-L/-40</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="features-dashboard">
+                                        <h3>Режимы работы</h3>
+                                        <div class="features-dashboard__row">
+                                            <div class="features-dashboard__left">Режим работы</div>
+                                            <div class="features-dashboard__right">охлаждение/обогрев</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="features-dashboard">
+                                        <h3>Электрические параметры</h3>
+                                        <div class="features-dashboard__row">
+                                            <div class="features-dashboard__left">Электропитание, В</div>
+                                            <div class="features-dashboard__right">220</div>
+                                        </div>
+                                    </div>
+
+                                    <div class="features-dashboard">
+                                        <h3>Производительность</h3>
+                                        <div class="features-dashboard__row">
+                                            <div class="features-dashboard__left">Мощность в режиме охлаждения</div>
+                                            <div class="features-dashboard__right">6.01 кВт</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card-tabs__item-first">
+                                    <p>
+                                        Купить кондиционер Daikin FTYN60L/RYN60L/-40 с зимним комплектом (Малайзия) в
+                                        интернет-магазине кондиционеров Авента96.ру в Екатеринбурге. Зимняя
+                                        сплит-система Daikin FTYN60L/RYN60L/-40: цена, описание, отзывы, технические
+                                        характеристики, фотографии и похожие товары.
+                                    </p>
+                                    <p class="card-note">
+                                        * Производитель оставляет за собой право на изменение внешнего вида,
+                                        комплектации и места производства товара без специального уведомления.
+                                        Пожалуйста, при покупке сверяйте информацию о товаре с информацией на
+                                        официальном сайте компании-производителя.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="card-tabs__item js-card-tab">Описание товара</div>
+                            <div class="card-tabs__item js-card-tab">Отзывы о товаре</div>
+                            <div class="card-tabs__item js-card-tab">Инструкция</div>
                         </div>
                     </div>
                 </div>

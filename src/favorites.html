@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Избранные товары",
+"description":"Онлайн климат-маркет",
+"favicon":"img/favicons/favicon",
+})
+
+<body>
+    @@include('components/page-blocks/_header.html')
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Избранное
+                </li>
+            </ul>
+
+            <div class="cart-head">
+                <h1 class="title-page">Избранное</h1>
+
+                <div class="cart-head__content">
+                    <div class="cart-head__info">В избранном товаров: 11</div>
+                    <button class="btn btn-cart-clear">Очистить избранное</button>
+                </div>
+            </div>
+
+            <div class="cart-wrapper">
+                <div class="cart-item">
+                    <div class="cart-item__img">
+                        <img src="img/card/card-item.jpg" alt="">
+                    </div>
+
+                    <div class="cart-item__content">
+                        <div class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</div>
+                        <div class="availability availability--available">В наличии</div>
+                        <table class="card-delivery">
+                            <tr>
+                                <td>
+                                    <span class="highlight">Самовывоз</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="highlight">Доставка</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="cart-item__inner">
+                        <div class="cart-item__price cart-item__buy">
+                            <div class="cart-item__caption">Цена товара</div>
+                            <div class="value">54 356 ₽</div>
+                        </div>
+
+                        <div class="cart-item__count">
+                            <div class="cart-item__caption">Количество</div>
+                            <div class="card-actions__count">
+                                <div class="counter-actions">
+                                    <button class="btn">-</button>
+                                    <span>1</span>
+                                    <button class="btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item__summ cart-item__buy">
+                            <div class="cart-item__caption">Сумма</div>
+                            <div class="value">122 321 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item__actions">
+                        <button class="btn btn-clear-item" title="Удалить товар">&#10006;</button>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item__img">
+                        <img src="img/card/card-item.jpg" alt="">
+                    </div>
+
+                    <div class="cart-item__content">
+                        <div class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</div>
+                        <div class="availability availability--available">В наличии</div>
+                        <table class="card-delivery">
+                            <tr>
+                                <td>
+                                    <span class="highlight">Самовывоз</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="highlight">Доставка</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+
+                    <div class="cart-item__inner">
+                        <div class="cart-item__price cart-item__buy">
+                            <div class="cart-item__caption">Цена товара</div>
+                            <div class="value">54 356 ₽</div>
+                        </div>
+
+                        <div class="cart-item__count">
+                            <div class="cart-item__caption">Количество</div>
+                            <div class="card-actions__count">
+                                <div class="counter-actions">
+                                    <button class="btn">-</button>
+                                    <span>1</span>
+                                    <button class="btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item__summ cart-item__buy">
+                            <div class="cart-item__caption">Сумма</div>
+                            <div class="value">122 321 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item__actions">
+                        <button class="btn btn-clear-item" title="Удалить товар">&#10006;</button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_includes.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

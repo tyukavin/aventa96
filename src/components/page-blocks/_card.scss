@@ -129,14 +129,20 @@
 
 .card-img {
     display: flex;
-    height: 410px;
     gap: 25px;
     flex: none;
+    flex-direction: column;
 
     img {
         height: 100%;
         width: 100%;
         object-fit: contain;
+    }
+
+    &__inner {
+        height: 410px;
+        display: flex;
+        gap: 25px;
     }
 }
 
@@ -201,6 +207,126 @@
     }
 }
 
+.card-img-promocode {
+    text-align: center;
+
+    img {
+        margin: 0 auto;
+        width: 180px;
+    }
+}
+
+.card-content {
+    display: flex;
+    gap: 38px;
+
+    &__aside {
+        flex: 1 0 100%;
+        max-width: 300px;
+        width: 100%;
+    }
+}
+
+.card-action-tabs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 25px;
+    gap: 4px;
+
+    .btn {
+        color: #B0B1B6;
+        border: 1px solid rgba(47, 105, 255, 0.50);
+        font-family: 'Acrom', sans-serif;
+        font-weight: 500;
+        padding: 14px 25px;
+
+        &.active {
+            background-color: #2F69FF;
+            color: #fff;
+        }
+    }
+}
+
+.card-tabs {
+    line-height: normal;
+    font-family: 'Acrom', sans-serif;
+    font-weight: 500;
+    line-height: normal;
+
+    &__item {
+        display: none;
+
+        &.active {
+            display: block;
+        }
+
+        p {
+            color: rgba(0, 0, 0, 0.50);
+            margin-bottom: 25px;
+        }
+
+        &-first {
+            font-size: 16px;
+            text-align: center;
+
+            p {
+                color: #000;
+            }
+
+            .card-note {
+                color: rgba(0, 0, 0, 0.30);
+                font-family: 'Acrom', sans-serif;
+                font-size: 16px;
+            }
+        }
+    }
+}
+
+.features {
+    column-count: 2;
+    column-gap: 8px;
+    margin-bottom: 35px;
+}
+
+.features-dashboard {
+    border-radius: 6px;
+    background-color: rgba(217, 217, 217, 0.20);
+    padding: 22px 28px;
+    margin-top: 8px;
+    width: 100%;
+    break-inside: avoid;
+
+    &:first-child {
+        margin-top: 0;
+    }
+
+    h3 {
+        color: #000;
+        font-size: 22px;
+        font-weight: 500;
+        margin-bottom: 20px;
+    }
+
+    &__row {
+        display: flex;
+        justify-content: space-between;
+        font-size: 14px;
+        margin-bottom: 12px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &__right {
+        color: rgba(0, 0, 0, 0.60);
+    }
+
+    &__left {
+        margin-right: 12px;
+    }
+}
+
 .related {
     padding: 0 15px;
     max-width: 250px;
@@ -231,7 +357,9 @@
         flex-direction: column;
         gap: 15px;
         margin: 0 25px;
-        width: 300px;
+        max-width: 300px;
+        min-width: 180px;
+        width: 100%;
 
         .btn {
             border-radius: 8px;

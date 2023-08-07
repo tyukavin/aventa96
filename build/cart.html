@@ -13,7 +13,7 @@
 	<link rel="stylesheet" href="css/libs.min.css">
 	<link rel="stylesheet" href="css/style.min.css">
 
-	<title>Страница не найдена</title>
+	<title>Корзина товаров</title>
 </head>
 
 
@@ -255,27 +255,282 @@
                     <a href="/">Главная</a>
                 </li>
                 <li class="breadcrumbs__item breadcrumbs__item--current">
-                    404 ошибка
+                    Корзина
                 </li>
             </ul>
 
-            <div class="not-found">
-                <picture>
-                    <source srcset="img/404.webp" type="image/webp" />
-                    <img src="img/404.png" srcset="img/404_2x.png 2x" class="not-found__img" alt="Страница не найдена" />
-                </picture>
-                <div class="not-found__content">
-                    <h1 class="not-found__title">404</h1>
-                    <p class="not-found__desc">
-                        Упс! Кажется, вы попали на страницу,<br>
-                        которой не существует.
-                    </p>
-                    <p>
-                        Но не переживайте, мы предлагаем вам охладиться и расслабиться с нашими кондиционерами.<br><br>
-                        Даже если страница не найдена, прохлада всегда с вами!
-                    </p>
+            <div class="cart-head">
+                <h1 class="title-page">Корзина</h1>
+
+                <div class="cart-head__content">
+                    <div class="cart-head__info">В корзине товаров: 11</div>
+                    <button class="btn btn-cart-clear">Очистить корзину</button>
                 </div>
             </div>
+
+            <div class="cart-wrapper">
+                <div class="cart-item">
+                    <div class="cart-item__img">
+                        <img src="img/card/card-item.jpg" alt="">
+                    </div>
+
+                    <div class="cart-item__content">
+                        <div class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</div>
+                        <div class="availability availability--available">В наличии</div>
+                        <table class="card-delivery">
+                            <tr>
+                                <td>
+                                    <span class="highlight">Самовывоз</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="highlight">Доставка</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <form action="" class="form-promo-cart">
+                            <input type="text" placeholder="Введите промокод">
+                            <button class="btn" type="submit">Получить скидку</button>
+                        </form>
+                    </div>
+
+                    <div class="cart-item__inner">
+                        <div class="cart-item__price cart-item__buy">
+                            <div class="cart-item__caption">Цена товара</div>
+                            <div class="value">54 356 ₽</div>
+                        </div>
+
+                        <div class="cart-item__count">
+                            <div class="cart-item__caption">Количество</div>
+                            <div class="card-actions__count">
+                                <div class="counter-actions">
+                                    <button class="btn">-</button>
+                                    <span>1</span>
+                                    <button class="btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item__summ cart-item__buy">
+                            <div class="cart-item__caption">Сумма</div>
+                            <div class="value">122 321 ₽</div>
+                        </div>
+                        <div class="cart-item__sale cart-item__buy">
+                            <div class="cart-item__caption">Со скидкой</div>
+                            <div class="value">110 325 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item__actions">
+                        <button class="btn btn-clear-item" title="Удалить товар">&#10006;</button>
+                    </div>
+                </div>
+
+                <div class="cart-item">
+                    <div class="cart-item__img">
+                        <img src="img/card/card-item.jpg" alt="">
+                    </div>
+
+                    <div class="cart-item__content">
+                        <div class="catalog-card__title">Кондиционер Ballu BSYI-12HN8/ES_23Y</div>
+                        <div class="availability availability--available">В наличии</div>
+                        <table class="card-delivery">
+                            <tr>
+                                <td>
+                                    <span class="highlight">Самовывоз</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <span class="highlight">Доставка</span>
+                                </td>
+                                <td>Екатеринбург</td>
+                                <td>
+                                    c 24.03.23 <span class="light">(при оплате до 12:00)</span>
+                                </td>
+                            </tr>
+                        </table>
+                        <form action="" class="form-promo-cart">
+                            <input type="text" placeholder="Введите промокод">
+                            <button class="btn" type="submit">Получить скидку</button>
+                        </form>
+                    </div>
+
+                    <div class="cart-item__inner">
+                        <div class="cart-item__price cart-item__buy">
+                            <div class="cart-item__caption">Цена товара</div>
+                            <div class="value">54 356 ₽</div>
+                        </div>
+
+                        <div class="cart-item__count">
+                            <div class="cart-item__caption">Количество</div>
+                            <div class="card-actions__count">
+                                <div class="counter-actions">
+                                    <button class="btn">-</button>
+                                    <span>1</span>
+                                    <button class="btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cart-item__summ cart-item__buy">
+                            <div class="cart-item__caption">Сумма</div>
+                            <div class="value">122 321 ₽</div>
+                        </div>
+                        <div class="cart-item__sale cart-item__buy">
+                            <div class="cart-item__caption">Со скидкой</div>
+                            <div class="value">110 325 ₽</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-item__actions">
+                        <button class="btn btn-clear-item" title="Удалить товар">&#10006;</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="cart-result-summ">
+                <div class="cart-result-summ__head">Сумма заказа:</div>
+                <div class="cart-result-summ__summ">54 000.00 ₽</div>
+            </div>
+
+            <div class="cart-info">
+                <div class="cart-info__row">
+                    <div class="cart-user">
+                        <div class="cart-info__head">
+                            <h3>Покупатель</h3>
+                        </div>
+                        <div class="cart-tabs">
+                            <button class="btn active js-user-cart-tab">Физ лицо</button>
+                            <button class="btn js-user-cart-tab">Юр лицо без НДС</button>
+                            <button class="btn js-user-cart-tab">Юр лицо с НДС</button>
+                        </div>
+                        <div class="cart-tabs-content">
+                            <div class="cart-tabs-content__item active js-user-cart-content">
+                                <input type="text" class="input" placeholder="ФИО">
+                                <input type="email" class="input" placeholder="Почта">
+                                <input type="tel" class="input" placeholder="Телефон">
+                            </div>
+                            <div class="cart-tabs-content__item js-user-cart-content">2</div>
+                            <div class="cart-tabs-content__item js-user-cart-content">3</div>
+                        </div>
+                    </div>
+
+                    <div class="cart-delivery">
+                        <div class="cart-info__head">
+                            <h3>Способ доставки</h3>
+                        </div>
+                        <div class="cart-tabs">
+                            <button class="btn active js-delivery-cart-tab">Доставка</button>
+                            <button class="btn js-delivery-cart-tab">Самовывоз</button>
+                        </div>
+                        <div class="cart-tabs-content">
+                            <div class="cart-tabs-content__item active js-delivery-cart-content">
+                                Доставка по адресу
+                            </div>
+                            <div class="cart-tabs-content__item js-delivery-cart-content">
+                                Самовывоз из пунктов выдачи
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cart-info__row">
+                    <div class="cart-pay">
+                        <div class="cart-info__head">
+                            <h3>Способ оплаты заказа</h3>
+                        </div>
+                        <div class="cart-pay-tabs">
+                            <button class="btn active js-cart-pay">
+                                <img src="img/pays/online.png" width="40" alt="">
+                                <div class="caption">Онлайн оплата</div>
+                            </button>
+                            <button class="btn js-cart-pay">
+                                <img src="img/pays/nal.png" width="40" alt="">
+                                <div class="caption">Наличные</div>
+                            </button>
+                            <button class="btn js-cart-pay">
+                                <img src="img/pays/online.png" width="40" alt="">
+                                <div class="caption">Картой</div>
+                            </button>
+                            <button class="btn js-cart-pay">
+                                <img src="img/pays/rassrochka.png" width="70" alt="">
+                                <div class="caption">Рассрочка</div>
+                            </button>
+                            <button class="btn js-cart-pay">
+                                <img src="img/pays/dol.png" alt="">
+                            </button>
+                            <button class="btn js-cart-pay">
+                                <img src="img/pays/schet.png" width="35" alt="">
+                                <div class="caption">Счет на оплату</div>
+                            </button>
+                        </div>
+                        <div class="cart-features">
+                            <div class="cart-features__content">
+                                <div class="checkbox">
+                                    <input type="checkbox" id="filter24">
+                                    <label for="filter24">Нужен монтаж </label>
+                                </div>
+                                <div class="checkbox">
+                                    <input type="checkbox" id="filter25">
+                                    <label for="filter25">Нужен подъем на этаж</label>
+                                </div>
+                            </div>
+                            <textarea name="" id="" rows="10" placeholder="Дополнительные комментарии"></textarea>
+                        </div>
+                    </div>
+
+                    <div class="cart-result">
+                        <div class="cart-result__row">
+                            <div class="caption caption--count">Товары, 3 шт.</div>
+                            <div class="value">122 321 ₽</div>
+                        </div>
+                        <div class="cart-result__row">
+                            <div class="caption">Доставка:</div>
+                            <div class="value value--orange">СДЭК до пункта самовывоза</div>
+                        </div>
+                        <div class="cart-result__row">
+                            <div class="caption caption--delivery">
+                                <div>Доставка (включена в итоговую стоимость)</div>
+                                <div>Москва, ул. Семёновский проезд, дом 3, квартира 13</div>
+                            </div>
+                            <div class="value">490 ₽</div>
+                        </div>
+                        <div class="cart-result__row">
+                            <div class="caption">Дата:</div>
+                            <div class="value value--orange">10-12 апреля</div>
+                        </div>
+                        <div class="cart-result__row">
+                            <div class="caption caption--result">Итого</div>
+                            <div class="value value--summ">122 724 ₽</div>
+                        </div>
+                        <div class="cart-result__actions">
+                            <div class="checkbox">
+                                <input type="checkbox" id="filter26">
+                                <label for="filter26">
+                                    Даю согласие на обработку персональных данных,<br>
+                                    согласен с условиями договора оферты
+                                </label>
+                            </div>
+                            <button class="btn btn-primary">Оформить заказ</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </main>
 
