@@ -1,0 +1,61 @@
+.brand-serts {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 30px;
+    column-gap: 25px;
+    margin-top: 30px;
+
+    &__item {
+        flex-basis: calc(25% - 25px);
+        width: 25%;
+        text-align: center;
+    }
+
+    &__name {
+
+        img {
+            margin: 0 auto 15px;
+            height: 56px;
+        }
+    }
+
+    &__images {
+        position: relative;
+
+        a {
+            display: none;
+
+            &:first-child {
+                display: block;
+            }
+        }
+
+        .zoom {
+            background-color: #fff;
+            border-radius: 6px;
+            height: 40px;
+            width: 40px;
+            position: absolute;
+            top: 5px;
+            right: 5px;
+            z-index: 2;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 10px;
+            opacity: .75;
+            pointer-events: none;
+        }
+    }
+}
+
+.pay-section {
+    margin-bottom: 35px;
+
+    ul {
+        list-style: circle;
+        padding-left: 20px;
+    }
+}

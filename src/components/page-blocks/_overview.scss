@@ -1,10 +1,37 @@
 .overview {
+    color: rgba(20, 20, 20, 0.80);
     display: flex;
     margin-bottom: 80px;
+
+    ol li, ul li, p {
+        // margin-bottom: 20px;
+        font-weight: 500;
+        line-height: normal;
+    }
+
+    p {
+        margin-bottom: 20px;
+    }
+
+    a {
+        color: inherit;
+    }
+
+    .high {
+        font-weight: 600;
+    }
+
+    .high-color {
+        color: #2F69FF;
+    }
+
+    .high-font {
+        font-family: 'Acrom', sans-serif;
+    }
 }
 
 .overview-tabs {
-    margin-right: 70px;
+    margin-right: 50px;
     display: flex;
     flex-direction: column;
     gap: 8px;
@@ -17,11 +44,21 @@
         padding: 12px 20px;
         font-weight: 400;
 
+        &--green {
+            border-color: #59FF2F;
+        }
+
         &.active {
             pointer-events: none;
             color: #fff;
             background-color: #2F69FF;
         }
+    }
+
+    .link {
+        color: #000;
+        margin: 25px 0 10px;
+        text-align: center;
     }
 }
 
@@ -74,32 +111,5 @@
 
     &.active {
         display: block;
-    }
-
-    ul li, p {
-        color: rgba(20, 20, 20, 0.80);
-        margin-bottom: 20px;
-        font-weight: 500;
-        line-height: normal;
-    }
-
-    ul {
-        padding-left: 18px;
-
-        & > li {
-            margin-bottom: 12px;
-        }
-    }
-
-    .selection {
-        font-weight: 600;
-
-        &--large {
-            font-size: 20px;
-        }
-    }
-
-    a {
-        color: inherit;
     }
 }

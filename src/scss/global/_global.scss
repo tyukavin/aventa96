@@ -24,23 +24,10 @@ body {
 body {
     background-color: #fff;
     font-size: 1rem;
+    line-height: normal;
 
     display: flex;
     flex-direction: column;
-}
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-    font-family: 'Acrom', sans-serif;
-}
-
-h2 {
-    font-size: 44px;
-    font-weight: 300;
 }
 
 ul,
@@ -56,8 +43,61 @@ h6 {
     margin: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: #000;
+    font-family: 'Acrom', sans-serif;
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 44px;
+    font-weight: 300;
+}
+
+h3 {
+    font-size: 20px;
+}
+
+ol, ul {
+    padding-left: 18px;
+    margin-bottom: 20px;
+
+    & > li {
+        margin-bottom: 5px;
+    }
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.selection {
+    font-weight: 600;
+
+    &--large {
+        font-size: 20px;
+    }
+}
+
+.required {
+    color: #FB6868;
+}
+
+.high {
+    font-weight: 600;
+}
+
 .main {
     flex: 1 0 auto;
+}
+
+a {
+    color: #2F69FF;
 }
 
 .container {
@@ -294,6 +334,7 @@ img {
 
     a {
         color: #000;
+        border: 1px solid transparent;
         border-radius: 5px;
         display: inline-flex;
         align-items: center;
@@ -302,6 +343,11 @@ img {
         width: 28px;
         font-weight: 600;
         text-decoration: none;
+        transition: border-color .2s;
+
+        &:hover {
+            border-color: #2F69FF;
+        }
 
         &.current {
             background-color: #2F69FF;

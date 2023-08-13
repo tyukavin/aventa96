@@ -2,7 +2,7 @@ const plugins = [
 	"src/js/jquery-3.6.4.min.js",
 	"src/js/swiper-bundle.min.js",
 	"src/js/jquery.inputmask.bundle.js",
-	"src/js/fancybox.umd.js"
+	// "src/js/fancybox.umd.js"
 ];
 const {
 	src,

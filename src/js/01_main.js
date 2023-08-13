@@ -130,4 +130,10 @@ $(document).ready(function() {
 
         $(this).parent().toggleClass("active");
     });
+
+    $(".js-faq-btn").click(function() {
+
+        $(this).text($(this).text() === "Свернуть" ? "Ответ магазина" : "Свернуть");
+        $(this).parent().find(".faq-response").toggleClass("active");
+    });
 });

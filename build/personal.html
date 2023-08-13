@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Онлайн климат-маркет">
+
+	<!-- <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml"> -->
+	<!-- <link rel="shortcut icon" href="img/favicon/favicon.webp" type="image/webp"> -->
+	<link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Личный кабинет</title>
+</head>
+
+
+<body>
+    <header class="header">
+    <div class="header-sub">
+        <div class="container">
+            <div class="header-sub__left">
+                <a href="#" class="header-city">
+                    <img src="img/header/map.png" alt="">
+                    <span>Екатеренбург</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="header-sale">
+                    <img src="img/header/sale.png" alt="Акции и скидки">
+                    <span>Акции и скидки</span>
+                </a>
+            </div>
+
+            <div class="header-sub__right">
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="pickup.html">Самовывоз</a></li>
+                        <li><a href="pays.html">Способ оплаты</a></li>
+                        <li><a href="garanty.html">Гарантии</a></li>
+                        <li><a href="install-cond.html">Установка кондиционеров</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-user">
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--user"></use>
+                    </svg>
+                    <div class="header-user__content">
+                        <button class="sign-in" data-fancybox="sign-in" data-src="#dialog-sign-in">Вход</button>
+                        <button class="sign-up" data-fancybox="sign-up" data-src="#dialog-sign-up">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/" title="Перейти на Главную страницу">
+                    <img src="img/logo.png" alt="Логотип Авента96">
+                </a>
+            </div>
+
+            <button class="header-catalog">
+                <img src="img/header/menu.svg" alt="">
+                <span>Каталог товаров</span>
+            </button>
+
+            <div class="header-search">
+                <form action="" class="header-search__form">
+                    <input type="text" placeholder="Поиск по сайту">
+                </form>
+            </div>
+
+            <div class="header-phones">
+                <div class="header-phones__row">
+                    <a href="tel:+73432879474" class="header-phones__link">+7 (343) 287-94-74</a>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down-phone"></use>
+                    </svg>
+                </div>
+                <p>
+                    Звоните нам до 18.00<br>
+                    Заказ оформляйте на сайте
+                </p>
+                <div class="phones-modal">
+                    <div class="phones-modal__title">Телефон</div>
+
+                    <p class="phones-modal__desc">
+                        Работаем с 15:00 до 20:00<br>с Пн по Пт<br>
+                        Заказ оформляйте на сайте
+                    </p>
+
+                    <a href="tel:+73432879474" class="phones-modal__tel">7 (343) 287-94-74</a>
+
+                    <div class="phones-modal__sub-title">По всем вопросам:</div>
+                    <a href="mailto:info@aventa96.ru" class="phones-modal__mail">info@aventa96.ru</a>
+
+                    <div class="phones-modal__sub-title">Адреса офиса:</div>
+                    <p>ул. Майкопская 10, оф. 502А (5 этаж)</p>
+
+                    <div class="phones-modal__socials">
+                        <a href="#" class="link-vk">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#" class="link-ok">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+
+                    <button class="btn">
+                        <img src="img/header/envelope.svg" alt="">
+                        <span>Обратная связь</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__links">
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/sravni.png" alt="Сравнение товаров" height="38" width="38">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Сравнить</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/fav.png" alt="Избранные товары" height="45" width="45">
+                        <div class="header-link__count header-link__count--fav">0</div>
+                    </div>
+                    <div class="header-link__caption">Избранное</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/cart.svg" alt="Корзина" height="33" width="36">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Корзина</div>
+                </a>
+            </div>
+
+            <a href="#" class="header-cart">0 ₽</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <aside class="menu-aside">
+                <a href="catalog.html" class="menu-aside__item active">Кондиционирование</a>
+                <a href="catalog.html" class="menu-aside__item">Водоснабжение и отопление</a>
+                <a href="catalog.html" class="menu-aside__item">Тепловое оборудование</a>
+                <a href="catalog.html" class="menu-aside__item">Очистители и увлажнители</a>
+                <a href="catalog.html" class="menu-aside__item">Вентиляция</a>
+                <a href="catalog.html" class="menu-aside__item">Тёплый пол и греющий кабель</a>
+            </aside>
+            <div class="menu-content">
+                <div class="menu-item active">
+                    <div class="menu-item__title">Кондиционирование</div>
+                    <div class="menu-item__wrap">
+                        <ul class="menu-item__list">
+                            <li><a href="catalog-filter.html">Настенные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Облачные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Мобильные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Оконные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Мульти-сплит системы</a></li>
+                            <li><a href="catalog-filter.html">Кассетные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Канальные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольно-потолочные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольно-канальные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Колонные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Компрессорно-конденсаторные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Аксессуары для кондиционеров</a></li>
+                            <li><a href="catalog-filter.html">Для монтажа кондиционеров</a></li>
+                        </ul>
+                        <div class="menu-item__brands">
+                            <div class="menu-item__brands-title">По производителям</div>
+                            <ul class="menu-item__brands-list">
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item__logos">
+                            <img src="img/header/brands-1.png" alt="">
+                            <img src="img/header/brands-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Водоснабжение и отопление</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тепловое оборудование</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Очистители и увлажнители</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Вентиляция</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тёплый пол и греющий кабель</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Личный кабинет
+                </li>
+            </ul>
+
+            <h1 class="title-page">Личный кабинет</h1>
+
+            <div class="personal">
+                <aside class="personal-side">
+    <nav>
+        <!-- <a href="#">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <path d="M13.4978 0.795354L13.6468 0.646354C13.759 0.53427 13.8921 0.445374 14.0386 0.38474C14.1851 0.324106 14.3421 0.292922 14.5007 0.292969C14.6592 0.293015 14.8162 0.324291 14.9627 0.385011C15.1092 0.44573 15.2422 0.534705 15.3543 0.646854C15.4664 0.759003 15.5553 0.89213 15.6159 1.03863C15.6766 1.18514 15.7077 1.34215 15.7077 1.50071C15.7077 1.65926 15.6764 1.81626 15.6157 1.96273C15.5549 2.1092 15.466 2.24227 15.3538 2.35435L15.2048 2.50235C15.4597 2.78822 15.5956 3.16075 15.5846 3.54358C15.5736 3.92642 15.4167 4.29056 15.1458 4.56135L4.85382 14.8544C4.78948 14.9184 4.70893 14.9636 4.62082 14.9854L0.620816 15.9854C0.537108 16.0062 0.449432 16.005 0.366309 15.982C0.283186 15.9589 0.207444 15.9147 0.146447 15.8537C0.0854489 15.7927 0.0412701 15.717 0.0182047 15.6339C-0.00486067 15.5507 -0.00602807 15.4631 0.014816 15.3794L1.01482 11.3794C1.0367 11.2916 1.08197 11.2114 1.14582 11.1474L10.7878 1.50535C10.6914 1.43748 10.5741 1.40588 10.4566 1.41613C10.3391 1.42637 10.229 1.47781 10.1458 1.56135L6.85382 4.85435C6.80733 4.90084 6.75214 4.93772 6.6914 4.96288C6.63066 4.98804 6.56556 5.00099 6.49982 5.00099C6.43407 5.00099 6.36897 4.98804 6.30823 4.96288C6.24749 4.93772 6.1923 4.90084 6.14582 4.85435C6.09933 4.80787 6.06245 4.75268 6.03729 4.69194C6.01213 4.6312 5.99918 4.5661 5.99918 4.50035C5.99918 4.43461 6.01213 4.36951 6.03729 4.30877C6.06245 4.24803 6.09933 4.19284 6.14582 4.14635L9.43982 0.854354C9.71079 0.583369 10.0752 0.426374 10.4583 0.415589C10.8414 0.404803 11.214 0.541045 11.4998 0.796354C11.7746 0.550792 12.1301 0.414966 12.4986 0.414781C12.8671 0.414597 13.2228 0.550068 13.4978 0.795354ZM12.8538 1.56135C12.7601 1.46762 12.6329 1.41496 12.5003 1.41496C12.3677 1.41496 12.2406 1.46762 12.1468 1.56135L1.94982 11.7564L1.18582 14.8134L4.24282 14.0494L14.4398 3.85435C14.4864 3.80791 14.5233 3.75273 14.5485 3.69199C14.5737 3.63124 14.5867 3.56612 14.5867 3.50035C14.5867 3.43459 14.5737 3.36947 14.5485 3.30872C14.5233 3.24797 14.4864 3.1928 14.4398 3.14635L12.8548 1.56135H12.8538Z" />
+                <clipPath id="clip0_162_94">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+            </svg>
+            <span>Настройки профиля</span>
+        </a> -->
+        <a href="personal-orders.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="15" viewBox="0 0 16 15">
+                <path d="M0 0.535714C0 0.393634 0.0561908 0.257373 0.156211 0.156907C0.256231 0.0564413 0.391888 0 0.533338 0H2.13335C2.25232 3.30123e-05 2.36786 0.0400186 2.4616 0.113598C2.55534 0.187177 2.6219 0.290126 2.65069 0.406071L3.08269 2.14286H15.4668C15.5478 2.14288 15.6278 2.16144 15.7006 2.19713C15.7734 2.23282 15.8371 2.2847 15.887 2.34883C15.9369 2.41296 15.9715 2.48766 15.9884 2.56726C16.0052 2.64686 16.0037 2.72926 15.9841 2.80821L14.3841 9.23679C14.3553 9.35273 14.2888 9.45568 14.195 9.52926C14.1013 9.60284 13.9858 9.64282 13.8668 9.64286H4.26671C4.14774 9.64282 4.0322 9.60284 3.93846 9.52926C3.84472 9.45568 3.77816 9.35273 3.74937 9.23679L1.71735 1.07143H0.533338C0.391888 1.07143 0.256231 1.01499 0.156211 0.914521C0.0561908 0.814055 0 0.677795 0 0.535714ZM3.34936 3.21429L3.8827 5.35714H5.33338V3.21429H3.34936ZM6.40006 3.21429V5.35714H8.53341V3.21429H6.40006ZM9.60009 3.21429V5.35714H11.7334V3.21429H9.60009ZM12.8001 3.21429V5.35714H14.2508L14.7841 3.21429H12.8001ZM13.9841 6.42857H12.8001V8.57143H13.4508L13.9841 6.42857ZM11.7334 6.42857H9.60009V8.57143H11.7334V6.42857ZM8.53341 6.42857H6.40006V8.57143H8.53341V6.42857ZM5.33338 6.42857H4.14937L4.68271 8.57143H5.33338V6.42857ZM5.33338 11.7857C5.05048 11.7857 4.77917 11.8986 4.57913 12.0995C4.37909 12.3005 4.26671 12.573 4.26671 12.8571C4.26671 13.1413 4.37909 13.4138 4.57913 13.6148C4.77917 13.8157 5.05048 13.9286 5.33338 13.9286C5.61628 13.9286 5.8876 13.8157 6.08764 13.6148C6.28768 13.4138 6.40006 13.1413 6.40006 12.8571C6.40006 12.573 6.28768 12.3005 6.08764 12.0995C5.8876 11.8986 5.61628 11.7857 5.33338 11.7857ZM3.20003 12.8571C3.20003 12.2888 3.42479 11.7438 3.82487 11.3419C4.22495 10.9401 4.76758 10.7143 5.33338 10.7143C5.89918 10.7143 6.44181 10.9401 6.84189 11.3419C7.24197 11.7438 7.46673 12.2888 7.46673 12.8571C7.46673 13.4255 7.24197 13.9705 6.84189 14.3724C6.44181 14.7742 5.89918 15 5.33338 15C4.76758 15 4.22495 14.7742 3.82487 14.3724C3.42479 13.9705 3.20003 13.4255 3.20003 12.8571ZM12.8001 11.7857C12.5172 11.7857 12.2459 11.8986 12.0459 12.0995C11.8458 12.3005 11.7334 12.573 11.7334 12.8571C11.7334 13.1413 11.8458 13.4138 12.0459 13.6148C12.2459 13.8157 12.5172 13.9286 12.8001 13.9286C13.083 13.9286 13.3543 13.8157 13.5544 13.6148C13.7544 13.4138 13.8668 13.1413 13.8668 12.8571C13.8668 12.573 13.7544 12.3005 13.5544 12.0995C13.3543 11.8986 13.083 11.7857 12.8001 11.7857ZM10.6668 12.8571C10.6668 12.2888 10.8915 11.7438 11.2916 11.3419C11.6917 10.9401 12.2343 10.7143 12.8001 10.7143C13.3659 10.7143 13.9085 10.9401 14.3086 11.3419C14.7087 11.7438 14.9335 12.2888 14.9335 12.8571C14.9335 13.4255 14.7087 13.9705 14.3086 14.3724C13.9085 14.7742 13.3659 15 12.8001 15C12.2343 15 11.6917 14.7742 11.2916 14.3724C10.8915 13.9705 10.6668 13.4255 10.6668 12.8571Z" />
+            </svg>
+            <span>История заказов</span>
+        </a>
+        <a href="personal-data.html">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+                <g clip-path="url(#clip0_162_200)">
+                <path d="M11.0769 3.64286C11.0769 4.609 10.6879 5.53558 9.99547 6.21875C9.30303 6.90191 8.36388 7.28571 7.38462 7.28571C6.40535 7.28571 5.4662 6.90191 4.77376 6.21875C4.08132 5.53558 3.69231 4.609 3.69231 3.64286C3.69231 2.67671 4.08132 1.75014 4.77376 1.06697C5.4662 0.3838 6.40535 0 7.38462 0C8.36388 0 9.30303 0.3838 9.99547 1.06697C10.6879 1.75014 11.0769 2.67671 11.0769 3.64286ZM0 13.3571C0 14.5714 1.23077 14.5714 1.23077 14.5714H7.38462V13.3571C7.38439 13.276 7.3885 13.195 7.39692 13.1143C7.33904 12.2737 7.4794 11.4313 7.80698 10.6533C8.13455 9.87523 8.64044 9.18266 9.28492 8.62993C8.71015 8.54614 8.07877 8.5 7.38462 8.5C1.23077 8.5 0 12.1429 0 13.3571ZM8.61539 13.3571C8.61539 13.0351 8.74506 12.7262 8.97587 12.4985C9.20668 12.2708 9.51973 12.1429 9.84615 12.1429V10.9286C9.84615 10.2845 10.1055 9.66676 10.5671 9.21131C11.0288 8.75587 11.6549 8.5 12.3077 8.5C12.9605 8.5 13.5866 8.75587 14.0483 9.21131C14.5099 9.66676 14.7692 10.2845 14.7692 10.9286V12.1429C15.0957 12.1429 15.4087 12.2708 15.6395 12.4985C15.8703 12.7262 16 13.0351 16 13.3571V15.7857C16 16.1078 15.8703 16.4166 15.6395 16.6443C15.4087 16.8721 15.0957 17 14.7692 17H9.84615C9.51973 17 9.20668 16.8721 8.97587 16.6443C8.74506 16.4166 8.61539 16.1078 8.61539 15.7857V13.3571ZM12.3077 9.71429C11.9813 9.71429 11.6682 9.84222 11.4374 10.0699C11.2066 10.2977 11.0769 10.6065 11.0769 10.9286V12.1429H13.5385V10.9286C13.5385 10.6065 13.4088 10.2977 13.178 10.0699C12.9472 9.84222 12.6341 9.71429 12.3077 9.71429Z" />
+                </g>
+                <defs>
+                <clipPath id="clip0_162_200">
+                <rect width="16" height="16" fill="white"/>
+                </clipPath>
+                </defs>
+            </svg>
+            <span>Персональные данные</span>
+        </a>
+        <a href="#">
+            <span>Помощь покупателю</span>
+        </a>
+
+        <a href="#" class="link-write">Написать заявление</a>
+    </nav>
+
+    <a href="index.html" class="logout">Выход</a>
+</aside>
+
+                <div class="personal-content">
+                    <p class="selection selection--large">
+                        Доброго времени суток, Иван!
+                    </p>
+                    <p>
+                        Вы находитесь в <a href="personal.html">личном кабинете</a>, здесь Вы можете:
+                    </p>
+                    <ul>
+                        <li>
+                            отслеживать свои <a href="personal-orders.html">заказы</a>
+                        </li>
+                        <li>
+                            изменять <a href="personal-data.html">персональные данные</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-content__inner">
+                <div class="footer-contacts">
+                    <a href="#" class="logo">
+                        <img src="img/logo-footer.png" alt="">
+                    </a>
+                    <p>
+                        <span>Телефон:</span> <a href="tel:+73432879474">7 (343) 287-94-74</a>
+                    </p>
+                    <p>
+                        <span>Адрес:</span> 620141 Екатеринбург, ул. Майкопская, д. 10, оф. 502А (5 этаж)
+                    </p>
+                    <p>
+                        <span>График:</span> Пн-Пт: 10:00 - 18:00 Сб-Вс:&nbsp;выходной
+                    </p>
+                    <p>
+                        <span>Email:</span> <a href="mailto:info@aventa96.ru">info@aventa96.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer-help">
+                    <div class="footer__title">Помощь покупателю</div>
+                    <nav class="footer-help__menu">
+                        <ul>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="pickup.html">Самовывоз</a></li>
+                            <li><a href="pays.html">Оплата</a></li>
+                            <li><a href="garanty.html">Гарантии</a></li>
+                            <li><a href="how-order.html">Как заказать</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Информация о компании</a></li>
+                            <li><a href="dealer.html">Официальный дилер</a></li>
+                            <li><a href="#">Поставщикам</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="install-cond.html">Установака кондиционеров</a></li>
+                            <li><a href="faq.html">Вопрос-ответ ( FAQ )</a></li>
+                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="#">Персональные данные</a></li>
+                            <li><a href="#">Публичная оферта</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-pay">
+                    <div class="footer__title">Доступные способы оплаты</div>
+                    <div class="footer-pay__line">
+                        <img src="img/footer/footer-money.png" alt="Наличные">
+                        <img src="img/footer/footer-mir.png" alt="Картой МИР">
+                        <img src="img/footer/footer-visa.png" alt="Картой VISA">
+                        <img src="img/footer/footer-mc.png" alt="Картой MasterCard">
+                    </div>
+                    <div class="footer-pay__reviews footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/otziv-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/otziv-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-pay__socials footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        © 2009-2023. Aventa96.ru - онлайн климат-маркет Екатеринбурга. Все права защищены.
+    </div>
+</footer>
+
+    <div class="popup" id="dialog-sign-in">
+    <h3 class="popup__title">Вход</h3>
+    <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signin-email">Email</label>
+            <input type="email" id="signin-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signin-pass">Пароль</label>
+            <input type="password" id="signin-pass" name="password">
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+        <div class="popup__footer">
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-up">Регистрация</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-up">
+    <h3 class="popup__title">Cоздать аккаунт</h3>
+    <div class="popup__desc">Создайте личный кабинет </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signup-name">ФИО</label>
+            <input type="text" id="signup-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="signup-phone">Номер телефона</label>
+            <input type="tel" id="signup-phone" name="phone">
+        </div>
+        <div class="popup__row">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass">Пароль</label>
+            <input type="password" id="signup-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass-approve">Подтвердите пароль</label>
+            <input type="password" id="signup-pass-approve" name="password-approve">
+        </div>
+        <button class="btn btn-large btn-primary">Зарегистрироваться</button>
+        <div class="popup__footer">
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-in">Вход</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-cart">
+    <h3 class="popup__title">Товар добавлен в корзину</h3>
+
+    <div class="popup-card">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+        <div class="counter-actions">
+            <button class="btn">-</button>
+            <span>1</span>
+            <button class="btn">+</button>
+        </div>
+        <div class="popup-card__price">110 325 ₽</div>
+    </div>
+
+    <div class="popup-actions">
+        <div class="popup-actions__info">
+            В корзине
+            <span>23 товара</span>
+        </div>
+
+        <div class="popup-actions__buttons">
+            <button class="btn btn-secondary js-modal-close">Продолжить покупки</button>
+            <a href="#" class="btn btn-primary">Перейти в корзину</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-compare">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>сравнение</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-favorite">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>избранное</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

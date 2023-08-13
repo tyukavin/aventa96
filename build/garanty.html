@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Онлайн климат-маркет">
+
+	<!-- <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml"> -->
+	<!-- <link rel="shortcut icon" href="img/favicon/favicon.webp" type="image/webp"> -->
+	<link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Гарантии</title>
+</head>
+
+
+<body>
+    <header class="header">
+    <div class="header-sub">
+        <div class="container">
+            <div class="header-sub__left">
+                <a href="#" class="header-city">
+                    <img src="img/header/map.png" alt="">
+                    <span>Екатеренбург</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="header-sale">
+                    <img src="img/header/sale.png" alt="Акции и скидки">
+                    <span>Акции и скидки</span>
+                </a>
+            </div>
+
+            <div class="header-sub__right">
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="pickup.html">Самовывоз</a></li>
+                        <li><a href="pays.html">Способ оплаты</a></li>
+                        <li><a href="garanty.html">Гарантии</a></li>
+                        <li><a href="install-cond.html">Установка кондиционеров</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-user">
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--user"></use>
+                    </svg>
+                    <div class="header-user__content">
+                        <button class="sign-in" data-fancybox="sign-in" data-src="#dialog-sign-in">Вход</button>
+                        <button class="sign-up" data-fancybox="sign-up" data-src="#dialog-sign-up">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/" title="Перейти на Главную страницу">
+                    <img src="img/logo.png" alt="Логотип Авента96">
+                </a>
+            </div>
+
+            <button class="header-catalog">
+                <img src="img/header/menu.svg" alt="">
+                <span>Каталог товаров</span>
+            </button>
+
+            <div class="header-search">
+                <form action="" class="header-search__form">
+                    <input type="text" placeholder="Поиск по сайту">
+                </form>
+            </div>
+
+            <div class="header-phones">
+                <div class="header-phones__row">
+                    <a href="tel:+73432879474" class="header-phones__link">+7 (343) 287-94-74</a>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down-phone"></use>
+                    </svg>
+                </div>
+                <p>
+                    Звоните нам до 18.00<br>
+                    Заказ оформляйте на сайте
+                </p>
+                <div class="phones-modal">
+                    <div class="phones-modal__title">Телефон</div>
+
+                    <p class="phones-modal__desc">
+                        Работаем с 15:00 до 20:00<br>с Пн по Пт<br>
+                        Заказ оформляйте на сайте
+                    </p>
+
+                    <a href="tel:+73432879474" class="phones-modal__tel">7 (343) 287-94-74</a>
+
+                    <div class="phones-modal__sub-title">По всем вопросам:</div>
+                    <a href="mailto:info@aventa96.ru" class="phones-modal__mail">info@aventa96.ru</a>
+
+                    <div class="phones-modal__sub-title">Адреса офиса:</div>
+                    <p>ул. Майкопская 10, оф. 502А (5 этаж)</p>
+
+                    <div class="phones-modal__socials">
+                        <a href="#" class="link-vk">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#" class="link-ok">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+
+                    <button class="btn">
+                        <img src="img/header/envelope.svg" alt="">
+                        <span>Обратная связь</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__links">
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/sravni.png" alt="Сравнение товаров" height="38" width="38">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Сравнить</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/fav.png" alt="Избранные товары" height="45" width="45">
+                        <div class="header-link__count header-link__count--fav">0</div>
+                    </div>
+                    <div class="header-link__caption">Избранное</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/cart.svg" alt="Корзина" height="33" width="36">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Корзина</div>
+                </a>
+            </div>
+
+            <a href="#" class="header-cart">0 ₽</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <aside class="menu-aside">
+                <a href="catalog.html" class="menu-aside__item active">Кондиционирование</a>
+                <a href="catalog.html" class="menu-aside__item">Водоснабжение и отопление</a>
+                <a href="catalog.html" class="menu-aside__item">Тепловое оборудование</a>
+                <a href="catalog.html" class="menu-aside__item">Очистители и увлажнители</a>
+                <a href="catalog.html" class="menu-aside__item">Вентиляция</a>
+                <a href="catalog.html" class="menu-aside__item">Тёплый пол и греющий кабель</a>
+            </aside>
+            <div class="menu-content">
+                <div class="menu-item active">
+                    <div class="menu-item__title">Кондиционирование</div>
+                    <div class="menu-item__wrap">
+                        <ul class="menu-item__list">
+                            <li><a href="catalog-filter.html">Настенные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Облачные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Мобильные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Оконные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Мульти-сплит системы</a></li>
+                            <li><a href="catalog-filter.html">Кассетные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Канальные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольно-потолочные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольно-канальные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Колонные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Компрессорно-конденсаторные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Аксессуары для кондиционеров</a></li>
+                            <li><a href="catalog-filter.html">Для монтажа кондиционеров</a></li>
+                        </ul>
+                        <div class="menu-item__brands">
+                            <div class="menu-item__brands-title">По производителям</div>
+                            <ul class="menu-item__brands-list">
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item__logos">
+                            <img src="img/header/brands-1.png" alt="">
+                            <img src="img/header/brands-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Водоснабжение и отопление</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тепловое оборудование</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Очистители и увлажнители</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Вентиляция</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тёплый пол и греющий кабель</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Гарантии
+                </li>
+            </ul>
+
+            <div class="overview">
+                <aside class="overview-tabs">
+    <a href="how-order.html" class="btn active">Как заказать</a>
+    <a href="dealer.html" class="btn">Официальный дилер</a>
+    <a href="delivery.html" class="btn">Доставка</a>
+    <a href="pickup.html" class="btn">Самовывоз</a>
+    <a href="pays.html" class="btn">Способы оплаты</a>
+    <a href="#" class="btn btn--green">Скидки и акции</a>
+    <a href="#" class="btn">Гарантии</a>
+
+    <a href="install-cond.html" class="link">Установка кондиционеров</a>
+    <a href="#" class="btn">Вопрос-ответ</a>
+</aside>
+
+                <div class="overview-content">
+                    <h1 class="title-page">Гарантии</h1>
+
+                    <h4>Качество товаров</h4>
+                    <p>
+                        Товары, продаваемые в онлайн климат-маркете Авента96.ру, имеют оригинальное происхождение,
+                        фирменную упаковку и гарантию производителя. Качество товаров соответствует всем требованиям,
+                        предусмотренным действующим законодательством, и подтверждено необходимыми сертификатами.
+                    </p>
+
+                    <h4>Гарантия производителя</h4>
+                    <p>
+                        На все оборудование, купленное в интернет-магазине Авента96.ру, предоставляется гарантия от
+                        производителя сроком не менее 12 месяцев и до 5 лет со дня продажи. Срок гарантии указывается в
+                        паспортах на оборудование и подтверждается печатью интернет-магазина.
+                    </p>
+                    <p>
+                        Гарантийное обслуживание производится бесплатно в <a href="#">специализированных сервисных
+                            центрах</a> при
+                        условии, что неполадки возникли не по вине покупателя или действий третьих лиц.
+                    </p>
+                    <p>
+                        На монтажные работы предоставляется гарантия 12 месяцев, со дня пуска оборудования в
+                        эксплуатацию.
+                    </p>
+
+                    <h4>Обмен и возврат товара</h4>
+                    <p class="selection">Возврат и обмен товара надлежащего качества</p>
+                    <p>
+                        Покупатель имеет право отказаться от товара в любое время до его передачи, а после его передачи
+                        – в течение 7 дней (п.4 Ст.26.1. Закона "О защите прав потребителей").
+                    </p>
+
+                    <p class="selection">
+                        Условием для возврата или обмена товара надлежащего качества являются:
+                    </p>
+                    <ul>
+                        <li>
+                            товар не эксплуатировался;
+                        </li>
+                        <li>целостность упаковки;</li>
+                        <li>
+                            товарный внешний вид;
+                        </li>
+                        <li>
+                            сохранены потребительские свойства, а также документы, подтверждающие факт и условия покупки
+                            указанного товара (Ст.26.1. Закона "О защите прав потребителей").
+                        </li>
+                        <li>
+                            товар не входит в перечень товаров, не подлежащих обмену на аналогичный товар, согласно
+                            Постановлению Правительства РФ от 31.12.2020г. № 2463 (п. 11: Технически сложные товары
+                            бытового назначения, на которые установлены гарантийные сроки не менее одного года).
+                        </li>
+                    </ul>
+
+                    <p class="selection">
+                        Обратите внимание, под определением "товарный вид" подразумевается:
+                    </p>
+                    <ul>
+                        <li>
+                            отсутствие потертостей, царапин, грязи на изделии, его комплектных устройствах, защитных
+                            пленках, внутренней упаковке
+                        </li>
+                        <li>
+                            отсутствие следов вскрытия изделия
+                        </li>
+                        <li>
+                            на изделии и его комплектующих, комплектных устройствах присутствуют все защитные и
+                            транспортные наклейки, пленки и наклейки с серийным номером находятся в идеальном состоянии
+                        </li>
+                        <li>
+                            комплект товара полностью сохранен; все входящие в комплект устройства имеют заводскую
+                            упаковку
+                        </li>
+                        <li>
+                            внешняя упаковка товара не имеет на себе следов грязи, ударов, скотча, кроме заводского.
+                        </li>
+                    </ul>
+                    <p>
+                        В том случае, если покупатель не желает обменять товар на аналогичный, то он вправе потребовать
+                        возврата уплаченной суммы. Возврат денежных средств будет осуществлен не позднее 10 дней со дня
+                        предъявления покупателем соответствующих требований (Ст. 26.1 Закона "О защите прав
+                        потребителей"):
+                    </p>
+                    <p>
+                        В случае отказа от товара надлежащего качества возврату подлежит уплаченная сумма, за
+                        исключением расходов продавца на доставку от потребителя возвращенного товара, а также других
+                        расходов интернет-магазином Aventa96.ru, подлежащих компенсации за счет Покупателя (Ст. 26.1
+                        Закона "О защите прав потребителей"), а также комиссий банка 4% (при оплате банковскими картами
+                        через терминал или при онлайн-оплате) на основании договора-оферты (Постановление Правительства
+                        РФ № 2463 от 31.12.2020 пункт 23).
+                    </p>
+
+                    <ul>
+                        <li>
+                            <span class="high">Для осуществления возврата товара</span> надлежащего качества необходимо
+                            составить заявление о
+                            возврате уплаченных денежных средств с указанием фамилии, имени и отчества покупателя,
+                            номера заказа, наименования возвращаемого товара, основания возврата, перечисления
+                            документов или иных доказательств, подтверждающих факт совершения покупки в
+                            интернет-магазине Aventa96.ru, отправить на адрес электронной почты info@aventa96.ru и
+                            передать в офис интернет-магазина.
+                        </li>
+                        <li>
+                            <span class="high">Для осуществления обмена товара</span> надлежащего качества необходимо
+                            составить заявление об
+                            обмене товара с указанием фамилии, имени и отчества покупателя, номера заказа, наименования
+                            обмениваемого товара, основания обмена, перечисления документов или иных доказательств,
+                            подтверждающих факт совершения покупки в интернет-магазине Aventa96.ru, отправить на
+                            электронный адрес info@aventa96.ru и передать в офис интернет-магазина.
+                        </li>
+                    </ul>
+                    <p>
+                        Заявление рассматривается в течение 10 (Десяти) дней. Решение о возврате уплаченной суммы или
+                        обмене товара сообщается по электронной почте.
+                    </p>
+
+                    <p class="selection">Возврат и обмен товара НЕнадлежащего качества</p>
+                    <p>
+                        Покупатель имеет право отказаться от получения товара ненадлежащего качества, бракованный или
+                        имеющий видимые повреждения и потребовать на свое усмотрение:
+                    </p>
+                    <ul>
+                        <li>
+                            Замены товара на качественный, либо по согласованию с покупателем на аналогичный, при этом
+                            разница в стоимости компенсируется в зависимости от стоимости товара покупателем или
+                            магазином.
+                        </li>
+                        <li>
+                            Расторжения договора купли-продажи и возврата уплаченной за товар суммы.
+                        </li>
+                    </ul>
+                    <p>
+                        После приемки товара и подписания товарной накладной, претензии к внешнему виду и комплектации
+                        товара НЕ принимаются! Внимательно осматривайте товар на предмет повреждений и проверяйте
+                        комплектацию в присутствии курьера до подписания накладной.
+                    </p>
+                    <p>
+                        Для осуществления возврата товара, необходимо составить заявление о возврате/обмене товара
+                        ненадлежащего качества с указанием: фамилии имени и отчества покупателя, паспортных данных,
+                        номера заказа, наименования возвращаемого товара, причин отказа, перечислить наименования
+                        документов или иных доказательств, подтверждающих факт совершения покупки в интернет-магазине
+                        Aventa96.ru. Возврат денежных средств будет осуществлен не позднее 10 дней с момента получения
+                        заявления.
+                    </p>
+                    <p>
+                        Решение о возврате уплаченной суммы производиться только при наличии письменного заявления
+                        (Заявление о возврате уплаченных денежных средств).
+                    </p>
+
+                    <h4>Экспертиза</h4>
+                    <p>
+                        При выявлении скрытых дефектов покупатель возвращает товар магазину, а магазин принимает товар
+                        на экспертизу, при этом, не предоставляя в замен или временное пользование такой же или
+                        аналогичный товар.
+                    </p>
+                    <p>
+                        Экспертиза производится за счет магазина, и после выявления брака товар ремонтируется также за
+                        счет магазина, или заменяется на новый. При выявлении дефекта, вызванного неправильной
+                        эксплуатацией, или выход из строя оборудования по вине покупателя, экспертиза и ремонт/замена
+                        оплачивается покупателем.
+                    </p>
+
+                    <h4>Доставка товара ненадлежащего качества</h4>
+                    <p>
+                        Доставка крупногабаритного товара и товара весом более 5 кг (ненадлежащего качества) для
+                        ремонта, замены и возврат их потребителю осуществляются силами и за счет магазина.
+                    </p>
+                    <p>
+                        Доставку некрупногабаритного (весом до 5 кг) товара до сервисного центра или продавца и обратно
+                        осуществляет покупатель.
+                    </p>
+
+                    <p class="selection high-color">
+                        Все действия связанные с гарантийными обязательствами решаются в максимально возможные короткие
+                        сроки.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-content__inner">
+                <div class="footer-contacts">
+                    <a href="#" class="logo">
+                        <img src="img/logo-footer.png" alt="">
+                    </a>
+                    <p>
+                        <span>Телефон:</span> <a href="tel:+73432879474">7 (343) 287-94-74</a>
+                    </p>
+                    <p>
+                        <span>Адрес:</span> 620141 Екатеринбург, ул. Майкопская, д. 10, оф. 502А (5 этаж)
+                    </p>
+                    <p>
+                        <span>График:</span> Пн-Пт: 10:00 - 18:00 Сб-Вс:&nbsp;выходной
+                    </p>
+                    <p>
+                        <span>Email:</span> <a href="mailto:info@aventa96.ru">info@aventa96.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer-help">
+                    <div class="footer__title">Помощь покупателю</div>
+                    <nav class="footer-help__menu">
+                        <ul>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="pickup.html">Самовывоз</a></li>
+                            <li><a href="pays.html">Оплата</a></li>
+                            <li><a href="garanty.html">Гарантии</a></li>
+                            <li><a href="how-order.html">Как заказать</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="#">Информация о компании</a></li>
+                            <li><a href="dealer.html">Официальный дилер</a></li>
+                            <li><a href="#">Поставщикам</a></li>
+                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="install-cond.html">Установака кондиционеров</a></li>
+                            <li><a href="faq.html">Вопрос-ответ ( FAQ )</a></li>
+                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="#">Персональные данные</a></li>
+                            <li><a href="#">Публичная оферта</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-pay">
+                    <div class="footer__title">Доступные способы оплаты</div>
+                    <div class="footer-pay__line">
+                        <img src="img/footer/footer-money.png" alt="Наличные">
+                        <img src="img/footer/footer-mir.png" alt="Картой МИР">
+                        <img src="img/footer/footer-visa.png" alt="Картой VISA">
+                        <img src="img/footer/footer-mc.png" alt="Картой MasterCard">
+                    </div>
+                    <div class="footer-pay__reviews footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/otziv-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/otziv-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-pay__socials footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        © 2009-2023. Aventa96.ru - онлайн климат-маркет Екатеринбурга. Все права защищены.
+    </div>
+</footer>
+
+    <div class="popup" id="dialog-sign-in">
+    <h3 class="popup__title">Вход</h3>
+    <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signin-email">Email</label>
+            <input type="email" id="signin-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signin-pass">Пароль</label>
+            <input type="password" id="signin-pass" name="password">
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+        <div class="popup__footer">
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-up">Регистрация</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-up">
+    <h3 class="popup__title">Cоздать аккаунт</h3>
+    <div class="popup__desc">Создайте личный кабинет </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signup-name">ФИО</label>
+            <input type="text" id="signup-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="signup-phone">Номер телефона</label>
+            <input type="tel" id="signup-phone" name="phone">
+        </div>
+        <div class="popup__row">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass">Пароль</label>
+            <input type="password" id="signup-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass-approve">Подтвердите пароль</label>
+            <input type="password" id="signup-pass-approve" name="password-approve">
+        </div>
+        <button class="btn btn-large btn-primary">Зарегистрироваться</button>
+        <div class="popup__footer">
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-in">Вход</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-cart">
+    <h3 class="popup__title">Товар добавлен в корзину</h3>
+
+    <div class="popup-card">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+        <div class="counter-actions">
+            <button class="btn">-</button>
+            <span>1</span>
+            <button class="btn">+</button>
+        </div>
+        <div class="popup-card__price">110 325 ₽</div>
+    </div>
+
+    <div class="popup-actions">
+        <div class="popup-actions__info">
+            В корзине
+            <span>23 товара</span>
+        </div>
+
+        <div class="popup-actions__buttons">
+            <button class="btn btn-secondary js-modal-close">Продолжить покупки</button>
+            <a href="#" class="btn btn-primary">Перейти в корзину</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-compare">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>сравнение</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-favorite">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>избранное</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
