@@ -48,6 +48,10 @@
     display: flex;
     gap: 26px;
     margin-bottom: 65px;
+    @include _760 {
+        overflow-y: auto;
+        width: 100%;
+    }
 
     .category-item {
         display: flex;
@@ -56,6 +60,9 @@
         width: calc(100% / 6);
         text-align: center;
         text-decoration: none;
+        @include _760 {
+            width: 20%;
+        }
 
         &__img {
             border-radius: 13px;

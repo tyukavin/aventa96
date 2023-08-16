@@ -311,6 +311,7 @@
     padding: 16px;
     position: relative;
     width: calc(100% / 3);
+    max-width: calc(100% / 3);
     flex: 1 1 30%;
 
     &:hover {

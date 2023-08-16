@@ -391,11 +391,22 @@ img {
 }
 
 .hits {
-    margin-bottom: 70px;
+    margin-bottom: 30px;
 
     .hits-slider {
         position: relative;
-        padding: 0 65px;
+        // padding: 0 65px;
+        width: 100%;
+
+        .swiper-wrapper {
+            padding-bottom: 40px;
+        }
+
+        .catalog-card {
+            flex: 1 1 100%;
+            min-width: 330px;
+            width: 100%;
+        }
     }
 
     .hits-swiper-button {
@@ -407,11 +418,11 @@ img {
         z-index: 5;
 
         &-prev {
-            left: 0;
+            left: -62px;
         }
 
         &-next {
-            right: 0;
+            right: -62px;
         }
     }
 }

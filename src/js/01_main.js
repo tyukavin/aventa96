@@ -54,13 +54,15 @@ $(document).ready(function() {
     });
 
     const swiperHits = new Swiper(".swiper-hits", {
-        loop: false,
-        slidesPerView: 6,
-        spaceBetween: 50,
+        loop: true,
+        slidesPerView: "auto",
+        spaceBetween: 20,
 
-        autoplay: {
-            delay: 3000,
-        },
+        freeMode: true,
+
+        // autoplay: {
+        //     delay: 3000,
+        // },
 
         navigation: {
             nextEl: ".hits-swiper-button-next",

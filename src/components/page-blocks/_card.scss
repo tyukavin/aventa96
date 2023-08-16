@@ -399,6 +399,15 @@
         text-align: center;
     }
 
+    input {
+        border: none;
+        outline: 0;
+        font-weight: 500;
+        margin: 0 0px 0px 14px;
+        max-width: 35px;
+        text-align: center;
+    }
+
     .btn {
         --size: 45px;
         border: 1px solid #AAA7FE;
