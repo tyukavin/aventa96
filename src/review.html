@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Самовывоз",
+"description":"Онлайн климат-маркет",
+"favicon":"img/favicon/favicon",
+})
+
+<body>
+    @@include('components/page-blocks/_header.html')
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Отзывы о магазине
+                </li>
+            </ul>
+
+            <div class="overview">
+                @@include('components/page-blocks/_overview-tabs-2.html')
+
+                <div class="overview-content">
+                    <h1 class="title-page">Отзывы о магазине</h1>
+
+                    <div class="review-content">
+                        <div class="review-content__inner">
+                            <p>
+                                Здесь Вы можете оставить свой отзыв о работе нашего интернет-магазина Aventa96.ru. Мы
+                                будем рады как добрым и теплым словам в наш адрес, так и конструктивной критике. А это
+                                значит, что мы готовы меняться в лучшую сторону, и будем рады, если Вы нам в этом
+                                поможете.
+                            </p>
+                            <p>
+                                Для того чтобы гордиться тем, что мы делаем, для того чтобы Ваше пребывание на страницах
+                                нашего интернет-магазина климатической техники было удобным и максимально комфортным для
+                                Вас, для того чтобы Вы, возвращаясь к нам, снова радовались нашим успехам и достижениям.
+                            </p>
+                            <p>
+                                Опишите всё, чем вам понравился наш интернет-магазин или, наоборот, с какими проблемами
+                                Вы столкнулись при покупке.
+                            </p>
+                            <p class="text-muted">
+                                Ваш отзыв будет опубликован через некоторое время после проверки модератором.
+                                Внимание! Отзыв должен быть содержательным и правдивым.
+                                Односложные, краткие, содержащие оскорбления и ненормативную лексику отзывы не
+                                публикуются!
+                            </p>
+                        </div>
+
+                        <div class="review-content__img">
+                            <img src="img/review.png" alt="">
+                        </div>
+                    </div>
+
+                    <div class="review-form-wrap">
+                        <h3>
+                            Сделали покупку в интернет-магазине климатической техники Aventa96.ru?<br>
+                            Поделитесь своим мнением о его работе.
+                        </h3>
+                        <form class="form-review" action="">
+                            <div class="form-review__col">
+                                <div class="form-review__row">
+                                    <div class="inputs">
+                                        <input type="text" class="input">
+                                        <input type="text" class="input">
+                                    </div>
+                                    <textarea class="input" id="" cols="30" rows="10"></textarea>
+                                </div>
+                                <div class="form-review__row"></div>
+                            </div>
+                            <div class="form-review__col"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_includes.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

@@ -1,0 +1,23 @@
+.review-content {
+    display: flex;
+    gap: 35px;
+    margin-bottom: 35px;
+
+    &__img {
+        flex: 1 0 45%;
+    }
+}
+
+.text-muted {
+    color: #b9b9b9;
+    font-size: 14px;
+}
+
+.form-review {
+    display: flex;
+
+    &__row {
+        display: flex;
+
+    }
+}
