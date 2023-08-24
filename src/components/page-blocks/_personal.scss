@@ -47,6 +47,7 @@
 }
 
 .personal-content {
+    flex: 1;
 
     &__head {
         font-size: 22px;
@@ -92,6 +93,7 @@
 
 .orders {
     border-collapse: collapse;
+    width: 100%;
 
     th, td {
         padding: 8px 20px;
@@ -110,28 +112,55 @@
             padding: 20px;
         }
     }
+
+    .btn {
+        font-size: 14px;
+    }
 }
 
 .details {
     border-radius: 9px;
     background-color: #fcfcfc;
-    display: table;
+    padding: 26px 38px;
     width: 100%;
 
     .details-head {
-        display: table-row;
+        display: flex;
         font-family: 'Acrom', sans-serif;
-        font-size: 15px;
+        font-size: 16px;
+    }
+
+    .details-cell {
+
+        &:nth-of-type(1) {
+            width: 45%;
+        }
+
+        &:nth-of-type(2) {
+            width: 10%;
+        }
+
+        &:nth-of-type(3) {
+            width: 20%;
+        }
+
+        &:nth-of-type(4) {
+            width: 25%;
+        }
     }
 
     .details-body {
-        display: table-row-group;
+        // display: table-row-group;
 
         &__item {
-            display: table-row;
+            display: flex;
         }
 
         .details-cell {
+
+            &:nth-of-type(1) {
+                width: 45%;
+            }
 
             &:nth-child(3) {
                 font-weight: 600;
@@ -140,24 +169,41 @@
     }
 
     .details-foot {
-        display: table-row;
+        display: flex;
+        margin-top: 30px;
+        font-family: 'Acrom', sans-serif;
         width: 100%;
 
         &__row {
             border-top: 2px solid #D9D9D9;
-            display: table-cell;
+            flex: 1;
+
+            &:nth-of-type(2) {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex: 0 0 30%;
+            }
         }
 
         &__cell {
             // display: table-cell;
             padding: 15px 15px 0;
         }
+
+        .total {
+            font-size: 28px;
+
+            &__color {
+                color: #2f69ff;
+            }
+        }
     }
 
     .details-cell {
         display: table-cell;
         font-size: 14px;
-        padding: 16px 26px;
+        padding: 12px;
         text-align: left;
 
         &:not(:first-of-type) {
@@ -171,6 +217,28 @@
     }
 }
 
+.btn-print {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+}
+
 .link-yellow {
     color: #FEA901;
+}
+
+.status-waiting {
+    color: #dac452;
+}
+
+.status-success {
+    color: #67DC3E;
+}
+
+.status-cancel {
+    color: #c7c7c7;
+}
+
+.status-fail {
+    color: #898989;
 }

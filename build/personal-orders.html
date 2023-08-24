@@ -287,7 +287,7 @@
             <span>Помощь покупателю</span>
         </a>
 
-        <a href="#" class="link-write">Написать заявление</a>
+        <a href="#dialog-question" class="link-write" data-fancybox>Написать заявление</a>
     </nav>
 
     <a href="index.html" class="logout">Выход</a>
@@ -332,7 +332,12 @@
                                     Самовывоз
                                 </td>
                                 <td>
-                                    Ожидает оплаты
+                                    <span class="status-waiting">
+                                        Ожидает оплаты
+                                    </span>
+                                </td>
+                                <td>
+                                    <button class="btn">Отменить</button>
                                 </td>
                             </tr>
 
@@ -349,7 +354,12 @@
                                     Самовывоз
                                 </td>
                                 <td>
-                                    Доставлен
+                                    <span class="status-success">
+                                        Доставлен
+                                    </span>
+                                </td>
+                                <td>
+                                    <button class="btn">Отменить</button>
                                 </td>
                             </tr>
 
@@ -366,7 +376,12 @@
                                     Самовывоз
                                 </td>
                                 <td>
-                                    Отменен
+                                    <span class="status-cancel">
+                                        Отменен
+                                    </span>
+                                </td>
+                                <td>
+                                    <button class="btn">Отменить</button>
                                 </td>
                             </tr>
 
@@ -383,64 +398,90 @@
                                     Самовывоз
                                 </td>
                                 <td>
-                                    Ошибочно оформленный
+                                    <span class="status-fail">
+                                        Ошибочно оформленный
+                                    </span>
                                 </td>
-                            </tr>
-
-                            <tr>
-                                <td colspan="6">
-                                    <div class="details">
-                                        <div class="details-head">
-                                            <div class="details-cell">Наименование товара</div>
-                                            <div class="details-cell">Количество</div>
-                                            <div class="details-cell">Сумма</div>
-                                            <div class="details-cell"></div>
-                                        </div>
-                                        <div class="details-body">
-                                            <div class="details-body__item">
-                                                <div class="details-cell">
-                                                    <a href="#">Напольно-потолочный кондиционер Kentatsu KSHF105HFAN3</a>
-                                                </div>
-                                                <div class="details-cell">1</div>
-                                                <div class="details-cell">123 4343 ₽</div>
-                                                <div class="details-cell">
-                                                    <a href="#" class="link-yellow">Оставить отзыв о товаре</a>
-                                                </div>
-                                            </div>
-                                            <div class="details-body__item">
-                                                <div class="details-cell">
-                                                    <a href="#">Напольно-потолочный кондиционер Kentatsu KSHF105HFAN3</a>
-                                                </div>
-                                                <div class="details-cell">1</div>
-                                                <div class="details-cell">123 4343 ₽</div>
-                                                <div class="details-cell">
-                                                    <a href="#" class="link-yellow">Оставить отзыв о товаре</a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="details-foot">
-                                            <div class="details-foot__row">
-                                                <div class="details-foot__cell">
-                                                    <strong>Способ доставки:</strong> Курьером
-                                                </div>
-                                                <div class="details-foot__cell">
-                                                    <strong>Способ оплаты:</strong> Безнализный расчет
-                                                </div>
-                                            </div>
-                                            <div class="details-foot__row">
-                                                <div class="details-foot__cell">
-                                                    <strong>Стоимость доставки</strong> 490 ₽
-                                                </div>
-                                                <div class="details-foot__cell">
-                                                    <span class="total">Итого <span class="total__color">45 390 ₽</span></span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                <td>
+                                    <button class="btn">Отменить</button>
                                 </td>
                             </tr>
                         </tbody>
                     </table>
+
+                    <div class="details">
+                        <div class="details-head">
+                            <div class="details-cell">Наименование товара</div>
+                            <div class="details-cell">Количество</div>
+                            <div class="details-cell">Сумма</div>
+                            <div class="details-cell"></div>
+                        </div>
+
+                        <div class="details-body">
+                            <div class="details-body__item">
+                                <div class="details-cell">
+                                    <a href="#">Напольно-потолочный кондиционер Kentatsu KSHF105HFAN3</a>
+                                </div>
+                                <div class="details-cell">1</div>
+                                <div class="details-cell">123 4343 ₽</div>
+                                <div class="details-cell">
+                                    <a href="review.html" class="link-yellow">Оставить отзыв о товаре</a>
+                                </div>
+                            </div>
+
+                            <div class="details-body__item">
+                                <div class="details-cell">
+                                    <a href="#">Напольно-потолочный кондиционер Kentatsu KSHF105HFAN3</a>
+                                </div>
+                                <div class="details-cell">1</div>
+                                <div class="details-cell">123 4343 ₽</div>
+                                <div class="details-cell">
+                                    <a href="review.html" class="link-yellow">Оставить отзыв о товаре</a>
+                                </div>
+                            </div>
+
+                            <div class="details-body__item">
+                                <div class="details-cell">
+                                    <a href="#">Напольно-потолочный кондиционер Kentatsu KSHF105HFAN3</a>
+                                </div>
+                                <div class="details-cell">1</div>
+                                <div class="details-cell">123 4343 ₽</div>
+                                <div class="details-cell">
+                                    <a href="review.html" class="link-yellow">Оставить отзыв о товаре</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="details-foot">
+                            <div class="details-foot__row">
+                                <div class="details-foot__cell">
+                                    <strong>Способ доставки:</strong> Курьером
+                                </div>
+                                <div class="details-foot__cell">
+                                    <strong>Способ оплаты:</strong> Безнализный расчет
+                                </div>
+                            </div>
+
+                            <div class="details-foot__row">
+                                <a href="#" class="btn btn-print">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                                        <path d="M20.1875 0C20.4693 0 20.7395 0.111942 20.9388 0.311199C21.1381 0.510456 21.25 0.780707 21.25 1.0625C21.25 1.34429 21.3619 1.61454 21.5612 1.8138C21.7605 2.01306 22.0307 2.125 22.3125 2.125C22.5943 2.125 22.8645 2.23694 23.0638 2.4362C23.2631 2.63546 23.375 2.90571 23.375 3.1875V4.25C23.375 4.53179 23.2631 4.80204 23.0638 5.0013C22.8645 5.20056 22.5943 5.3125 22.3125 5.3125H11.6875C11.4057 5.3125 11.1355 5.20056 10.9362 5.0013C10.7369 4.80204 10.625 4.53179 10.625 4.25V3.1875C10.625 2.90571 10.7369 2.63546 10.9362 2.4362C11.1355 2.23694 11.4057 2.125 11.6875 2.125C11.9693 2.125 12.2395 2.01306 12.4388 1.8138C12.6381 1.61454 12.75 1.34429 12.75 1.0625C12.75 0.780707 12.8619 0.510456 13.0612 0.311199C13.2605 0.111942 13.5307 0 13.8125 0L20.1875 0Z" fill="black"/>
+                                        <path d="M6.375 5.3125C6.375 5.03071 6.48694 4.76046 6.6862 4.5612C6.88546 4.36194 7.15571 4.25 7.4375 4.25H8.5C8.78179 4.25 9.05204 4.13806 9.2513 3.9388C9.45056 3.73954 9.5625 3.46929 9.5625 3.1875C9.5625 2.90571 9.45056 2.63546 9.2513 2.4362C9.05204 2.23694 8.78179 2.125 8.5 2.125H7.4375C6.59212 2.125 5.78137 2.46083 5.1836 3.0586C4.58583 3.65637 4.25 4.46712 4.25 5.3125V30.8125C4.25 31.6579 4.58583 32.4686 5.1836 33.0664C5.78137 33.6642 6.59212 34 7.4375 34H26.5625C27.4079 34 28.2186 33.6642 28.8164 33.0664C29.4142 32.4686 29.75 31.6579 29.75 30.8125V5.3125C29.75 4.46712 29.4142 3.65637 28.8164 3.0586C28.2186 2.46083 27.4079 2.125 26.5625 2.125H25.5C25.2182 2.125 24.948 2.23694 24.7487 2.4362C24.5494 2.63546 24.4375 2.90571 24.4375 3.1875C24.4375 3.46929 24.5494 3.73954 24.7487 3.9388C24.948 4.13806 25.2182 4.25 25.5 4.25H26.5625C26.8443 4.25 27.1145 4.36194 27.3138 4.5612C27.5131 4.76046 27.625 5.03071 27.625 5.3125V30.8125C27.625 31.0943 27.5131 31.3645 27.3138 31.5638C27.1145 31.7631 26.8443 31.875 26.5625 31.875H7.4375C7.15571 31.875 6.88546 31.7631 6.6862 31.5638C6.48694 31.3645 6.375 31.0943 6.375 30.8125V5.3125Z" fill="black"/>
+                                        <path d="M23.0641 16.6901C23.2636 16.4906 23.3757 16.22 23.3757 15.9379C23.3757 15.6557 23.2636 15.3851 23.0641 15.1856C22.8646 14.9861 22.594 14.874 22.3119 14.874C22.0297 14.874 21.7591 14.9861 21.5596 15.1856L15.9369 20.8105L13.5016 18.3731C13.3021 18.1736 13.0315 18.0615 12.7494 18.0615C12.4672 18.0615 12.1966 18.1736 11.9971 18.3731C11.7976 18.5726 11.6855 18.8432 11.6855 19.1254C11.6855 19.4075 11.7976 19.6781 11.9971 19.8776L15.1846 23.0651C15.2833 23.1641 15.4006 23.2426 15.5297 23.2961C15.6588 23.3497 15.7971 23.3773 15.9369 23.3773C16.0766 23.3773 16.215 23.3497 16.3441 23.2961C16.4732 23.2426 16.5904 23.1641 16.6891 23.0651L23.0641 16.6901Z" fill="black"/>
+                                    </svg>
+                                    <span>Распечатать счет</span>
+                                </a>
+                            </div>
+
+                            <div class="details-foot__row">
+                                <div class="details-foot__cell">
+                                    <strong>Стоимость доставки</strong> 490 ₽
+                                </div>
+                                <div class="details-foot__cell">
+                                    <span class="total">Итого <span class="total__color">45 390 ₽</span></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
