@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
 "lang":"ru",
-"title":"Самовывоз",
+"title":"Отзывы о магазине",
 "description":"Онлайн климат-маркет",
 "favicon":"img/favicon/favicon",
 })
@@ -14,6 +14,9 @@
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item breadcrumbs__item--home">
                     <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item">
+                    <a href="about.html">Авента96.ру - это...</a>
                 </li>
                 <li class="breadcrumbs__item breadcrumbs__item--current">
                     Отзывы о магазине
@@ -63,17 +66,146 @@
                         </h3>
                         <form class="form-review" action="">
                             <div class="form-review__col">
-                                <div class="form-review__row">
+                                <div class="form-review__row review-fields">
                                     <div class="inputs">
-                                        <input type="text" class="input">
-                                        <input type="text" class="input">
+                                        <input type="text" class="input" placeholder="Ваше имя">
+                                        <input type="text" class="input" placeholder="Ваш E-mail (не публикуется)">
                                     </div>
-                                    <textarea class="input" id="" cols="30" rows="10"></textarea>
+                                    <textarea class="input" id="" placeholder="Текст отзыва"></textarea>
                                 </div>
-                                <div class="form-review__row"></div>
+                                <div class="form-review__row">
+                                    <div class="stars-review">
+                                        <img src="img/stars-empty.png" alt="">
+                                        <h4>Отличный интернет магазин</h4>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="form-review__col"></div>
+                            <div class="form-review__col hint-agreed">
+                                <p>
+                                    Нажимая кнопку "Добавить отзыв", я подтверждаю, что даю согласие ООО "Авента96" и
+                                    его уполномоченным представителям на обработку предоставленных мной данных,
+                                    содержащихся    в форме на условиях, изложенных в <a href="#">политике обработки персональных данных</a>.
+                                </p>
+                                <button type="submit" class="btn">Добавить отзыв</button>
+                            </div>
                         </form>
+                    </div>
+
+                    <div class="sorting">
+                        <span class="head">Сортировать по</span>
+                        <a href="#">Дате</a>
+                        <a href="#">Оценке</a>
+                    </div>
+
+                    <div class="faq-list">
+                        <div class="faq-item">
+                            <div class="faq-item__head">
+                                <div class="faq-item__left">
+                                    <img src="img/faq.png" alt="">
+                                    <h4>Виктор</h4>
+                                    <img src="img/stars.png" alt="">
+                                </div>
+                                <div class="faq-item__topic">11 октября 2013</div>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>
+                                    Заказ 17760. Заказал кондиционер кентатцу с установкой. По цене,оплате все
+                                    отлично. Доставили
+                                    в нужную дату и время,курьер вежливый позвонил заранее. Установка- стандартный
+                                    монтаж, внутри квартиры чисто,но вот вид с улицы удручил.красота рядом не
+                                    стояла. В целом рекомендую .
+                                </p>
+                                <button class="btn js-faq-btn">Ответ магазина</button>
+                                <div class="faq-response">
+                                    <div class="faq-response__head">Ответ</div>
+                                    <p>Вадим, здравствуйте!</p>
+                                    <p>
+                                        Кондиционер Mitsubishi Electric MSZ-HJ35VA в среднем рассчитан на 30 кв.м.
+                                        Для установки в комнату 20 кв.м. смотрите кондиционер на модель ниже, то
+                                        есть Mitsubishi Electric MSZ-HJ25VA/MUZ-HJ25VA.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-item__head">
+                                <div class="faq-item__left">
+                                    <img src="img/faq.png" alt="">
+                                    <h4>Виктор</h4>
+                                    <img src="img/stars.png" alt="">
+                                </div>
+                                <div class="faq-item__topic">11 октября 2013</div>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>
+                                    Заказ 17760. Заказал кондиционер кентатцу с установкой. По цене,оплате все
+                                    отлично. Доставили
+                                    в нужную дату и время,курьер вежливый позвонил заранее. Установка- стандартный
+                                    монтаж, внутри квартиры чисто,но вот вид с улицы удручил.красота рядом не
+                                    стояла. В целом рекомендую .
+                                </p>
+                                <button class="btn js-faq-btn">Ответ магазина</button>
+                                <div class="faq-response">
+                                    <div class="faq-response__head">Ответ</div>
+                                    <p>Вадим, здравствуйте!</p>
+                                    <p>
+                                        Кондиционер Mitsubishi Electric MSZ-HJ35VA в среднем рассчитан на 30 кв.м.
+                                        Для установки в комнату 20 кв.м. смотрите кондиционер на модель ниже, то
+                                        есть Mitsubishi Electric MSZ-HJ25VA/MUZ-HJ25VA.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="faq-item">
+                            <div class="faq-item__head">
+                                <div class="faq-item__left">
+                                    <img src="img/faq.png" alt="">
+                                    <h4>Виктор</h4>
+                                    <img src="img/stars.png" alt="">
+                                </div>
+                                <div class="faq-item__topic">11 октября 2013</div>
+                            </div>
+                            <div class="faq-item__content">
+                                <p>
+                                    Заказ 17760. Заказал кондиционер кентатцу с установкой. По цене,оплате все
+                                    отлично. Доставили
+                                    в нужную дату и время,курьер вежливый позвонил заранее. Установка- стандартный
+                                    монтаж, внутри квартиры чисто,но вот вид с улицы удручил.красота рядом не
+                                    стояла. В целом рекомендую .
+                                </p>
+                                <button class="btn js-faq-btn">Ответ магазина</button>
+                                <div class="faq-response">
+                                    <div class="faq-response__head">Ответ</div>
+                                    <p>Вадим, здравствуйте!</p>
+                                    <p>
+                                        Кондиционер Mitsubishi Electric MSZ-HJ35VA в среднем рассчитан на 30 кв.м.
+                                        Для установки в комнату 20 кв.м. смотрите кондиционер на модель ниже, то
+                                        есть Mitsubishi Electric MSZ-HJ25VA/MUZ-HJ25VA.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="catalog-items__paginator">
+                        <div class="pagination">
+                            <!-- <button class="btn">Назад</button> -->
+                            <a class="current" href="#">1</a>
+                            <a href="#">2</a>
+                            <a href="#">3</a>
+                            <a href="#">4</a>
+                            <a href="#">5</a>
+                            <button class="btn">Дальше</button>
+                        </div>
+                        <div class="page-to">
+                            <form action="">
+                                <label for="page-to">Перейти на страницу</label>
+                                <input id="page-to" type="text">
+                                <button class="btn">Перейти</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

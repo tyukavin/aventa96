@@ -15,6 +15,16 @@
         min-width: 800px;
     }
 
+    &__wrap {
+        display: flex;
+        align-items: flex-start;
+        gap: 35px;
+    }
+
+    &__img {
+        max-width: 360px;
+    }
+
     &__title {
         font-size: 36px;
         font-weight: 500;
@@ -45,7 +55,8 @@
         margin-bottom: 10px;
     }
 
-    input {
+    input,
+    textarea {
         border: 2px solid #F4F4F4;
         border-radius: 10px;
         background-color: #fff;

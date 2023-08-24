@@ -24,6 +24,10 @@
         &__inner {
             padding: 30px 0 65px;
             display: flex;
+            @include _760 {
+                flex-direction: column;
+                padding: 30px 0;
+            }
         }
     }
 
@@ -32,6 +36,11 @@
         font-weight: 600;
         max-width: 280px;
         margin-right: 75px;
+        @include _760 {
+            max-width: 100%;
+            margin-right: 0;
+            margin-bottom: 30px;
+        }
 
         .logo {
             display: inline-block;
@@ -57,6 +66,9 @@
         &__menu {
             display: flex;
             gap: 45px;
+            @include _760 {
+                gap: 20px;
+            }
 
             ul {
                 &:first-child {
@@ -72,6 +84,9 @@
                 color: rgba(255, 255, 255, 0.5);
                 font-size: 14px;
                 font-weight: 700;
+                @include _760 {
+                    font-weight: 600;
+                }
 
                 &:hover {
                     color: #fff;
@@ -82,6 +97,9 @@
 
     .footer-pay {
         margin-left: auto;
+        @include _760 {
+            margin-left: 0;
+        }
 
         .footer__title {
             margin-bottom: 10px;

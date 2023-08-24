@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Онлайн климат-маркет">
+
+	<!-- <link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/svg+xml"> -->
+	<!-- <link rel="shortcut icon" href="img/favicon/favicon.webp" type="image/webp"> -->
+	<link rel="shortcut icon" href="img/favicon/favicon-32x32.png" type="image/x-icon">
+
+	<link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Помощь покупателю</title>
+</head>
+
+
+<body>
+    <header class="header">
+    <div class="header-sub">
+        <div class="container">
+            <div class="header-sub__left">
+                <a href="#" class="header-city">
+                    <img src="img/header/map.png" alt="">
+                    <span>Екатеренбург</span>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down"></use>
+                    </svg>
+                </a>
+
+                <a href="#" class="header-sale">
+                    <img src="img/header/sale.png" alt="Акции и скидки">
+                    <span>Акции и скидки</span>
+                </a>
+            </div>
+
+            <div class="header-sub__right">
+                <nav class="header-menu">
+                    <ul>
+                        <li><a href="delivery.html">Доставка</a></li>
+                        <li><a href="pickup.html">Самовывоз</a></li>
+                        <li><a href="pays.html">Способ оплаты</a></li>
+                        <li><a href="garanty.html">Гарантии</a></li>
+                        <li><a href="install-cond.html">Установка кондиционеров</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                    </ul>
+                </nav>
+
+                <div class="header-user">
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--user"></use>
+                    </svg>
+                    <div class="header-user__content">
+                        <button class="sign-in" data-fancybox="sign-in" data-src="#dialog-sign-in">Вход</button>
+                        <button class="sign-up" data-fancybox="sign-up" data-src="#dialog-sign-up">Регистрация</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-main">
+        <div class="container">
+            <div class="header-logo">
+                <a href="/" title="Перейти на Главную страницу">
+                    <img src="img/logo.png" alt="Логотип Авента96">
+                </a>
+            </div>
+
+            <button class="header-catalog">
+                <img src="img/header/menu.svg" alt="">
+                <span>Каталог товаров</span>
+            </button>
+
+            <div class="header-search">
+                <form action="" class="header-search__form">
+                    <input type="text" placeholder="Поиск по сайту">
+                </form>
+            </div>
+
+            <div class="header-phones">
+                <div class="header-phones__row">
+                    <a href="tel:+73432879474" class="header-phones__link">+7 (343) 287-94-74</a>
+                    <svg class="icon">
+                        <use xlink:href="../img/sprite.svg#include--chevron-down-phone"></use>
+                    </svg>
+                </div>
+                <p>
+                    Звоните нам до 18.00<br>
+                    Заказ оформляйте на сайте
+                </p>
+                <div class="phones-modal">
+                    <div class="phones-modal__title">Телефон</div>
+
+                    <p class="phones-modal__desc">
+                        Работаем с 15:00 до 20:00<br>с Пн по Пт<br>
+                        Заказ оформляйте на сайте
+                    </p>
+
+                    <a href="tel:+73432879474" class="phones-modal__tel">7 (343) 287-94-74</a>
+
+                    <div class="phones-modal__sub-title">По всем вопросам:</div>
+                    <a href="mailto:info@aventa96.ru" class="phones-modal__mail">info@aventa96.ru</a>
+
+                    <div class="phones-modal__sub-title">Адреса офиса:</div>
+                    <p>ул. Майкопская 10, оф. 502А (5 этаж)</p>
+
+                    <div class="phones-modal__socials">
+                        <a href="#" class="link-vk">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#" class="link-ok">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+
+                    <button class="btn" data-fancybox="feedback" data-src="#dialog-feedback">
+                        <img src="img/header/envelope.svg" alt="">
+                        <span>Обратная связь</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="header__links">
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/sravni.png" alt="Сравнение товаров" height="38" width="38">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Сравнить</div>
+                </a>
+                <a href="#" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/fav.png" alt="Избранные товары" height="45" width="45">
+                        <div class="header-link__count header-link__count--fav">0</div>
+                    </div>
+                    <div class="header-link__caption">Избранное</div>
+                </a>
+                <a href="cart.html" class="header-link">
+                    <div class="header-link__img">
+                        <img src="img/header/cart.svg" alt="Корзина" height="33" width="36">
+                        <div class="header-link__count">0</div>
+                    </div>
+                    <div class="header-link__caption">Корзина</div>
+                </a>
+            </div>
+
+            <a href="cart.html" class="header-cart">0 ₽</a>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="container">
+            <aside class="menu-aside">
+                <a href="catalog.html" class="menu-aside__item active">Кондиционирование</a>
+                <a href="catalog.html" class="menu-aside__item">Водоснабжение и отопление</a>
+                <a href="catalog.html" class="menu-aside__item">Тепловое оборудование</a>
+                <a href="catalog.html" class="menu-aside__item">Очистители и увлажнители</a>
+                <a href="catalog.html" class="menu-aside__item">Вентиляция</a>
+                <a href="catalog.html" class="menu-aside__item">Тёплый пол и греющий кабель</a>
+            </aside>
+            <div class="menu-content">
+                <div class="menu-item active">
+                    <div class="menu-item__title">Кондиционирование</div>
+                    <div class="menu-item__wrap">
+                        <ul class="menu-item__list">
+                            <li><a href="catalog-filter.html">Настенные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Облачные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Мобильные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Оконные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Мульти-сплит системы</a></li>
+                            <li><a href="catalog-filter.html">Кассетные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Канальные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольно-потолочные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Напольно-канальные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Колонные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Компрессорно-конденсаторные кондиционеры</a></li>
+                            <li><a href="catalog-filter.html">Аксессуары для кондиционеров</a></li>
+                            <li><a href="catalog-filter.html">Для монтажа кондиционеров</a></li>
+                        </ul>
+                        <div class="menu-item__brands">
+                            <div class="menu-item__brands-title">По производителям</div>
+                            <ul class="menu-item__brands-list">
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                                <li><a href="#">AC Electric</a></li>
+                            </ul>
+                        </div>
+                        <div class="menu-item__logos">
+                            <img src="img/header/brands-1.png" alt="">
+                            <img src="img/header/brands-2.jpg" alt="">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Водоснабжение и отопление</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тепловое оборудование</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Очистители и увлажнители</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Вентиляция</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+
+                <div class="menu-item">
+                    <div class="menu-item__title">Тёплый пол и греющий кабель</div>
+                    <div class="menu-item__wrap">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Помощь покупателю
+                </li>
+            </ul>
+
+            <div class="overview">
+                <aside class="overview-tabs">
+    <a href="how-order.html" class="btn">Как заказать</a>
+    <a href="delivery.html" class="btn">Доставка</a>
+    <a href="pickup.html" class="btn">Самовывоз</a>
+    <a href="pays.html" class="btn">Способы оплаты</a>
+    <a href="sales.html" class="btn btn--green">Скидки и акции</a>
+    <a href="garanty.html" class="btn">Гарантии</a>
+
+    <a href="install-cond.html" class="link">Установка кондиционеров</a>
+    <a href="faq.html" class="btn">Вопрос-ответ</a>
+</aside>
+
+                <div class="overview-content">
+                    <h1 class="title-page">Помощь покупателю</h1>
+
+                    <p>
+                        Мы рады видеть Вас в нашем интернет-магазине климатической техники - в онлайн климат-маркете
+                        Авента96.ру.
+                    </p>
+
+                    <p>
+                        Надеемся, что пребывание на страницах нашего сайта будет приятно Вам, а процесс покупки —
+                        простым, удобным и выгодным. Выбирая наш интернет-магазин, Вы можете быть уверены, что
+                        приобретаете качественный товар.
+                    </p>
+
+                    <p>
+                        Квалифицированные менеджеры-консультанты всегда готовы прийти Вам на помощь при выборе товара
+                        или оформлении покупки. Также в помощь Вам создан этот раздел, где Вы сможете найти ответы на
+                        многие вопросы, касающиеся работы нашего интернет-магазина. Если Вы все-таки не смогли найти
+                        интересующую Вас информацию, можете отправить нам запрос с помощью формы обратной связи.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+    <div class="footer-content">
+        <div class="container">
+            <div class="footer-content__inner">
+                <div class="footer-contacts">
+                    <a href="#" class="logo">
+                        <img src="img/logo-footer.png" alt="">
+                    </a>
+                    <p>
+                        <span>Телефон:</span> <a href="tel:+73432879474">7 (343) 287-94-74</a>
+                    </p>
+                    <p>
+                        <span>Адрес:</span> 620141 Екатеринбург, ул. Майкопская, д. 10, оф. 502А (5 этаж)
+                    </p>
+                    <p>
+                        <span>График:</span> Пн-Пт: 10:00 - 18:00 Сб-Вс:&nbsp;выходной
+                    </p>
+                    <p>
+                        <span>Email:</span> <a href="mailto:info@aventa96.ru">info@aventa96.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer-help">
+                    <div class="footer__title">Помощь покупателю</div>
+                    <nav class="footer-help__menu">
+                        <ul>
+                            <li><a href="delivery.html">Доставка</a></li>
+                            <li><a href="pickup.html">Самовывоз</a></li>
+                            <li><a href="pays.html">Оплата</a></li>
+                            <li><a href="garanty.html">Гарантии</a></li>
+                            <li><a href="how-order.html">Как заказать</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="about.html">Информация о компании</a></li>
+                            <li><a href="dealer.html">Официальный дилер</a></li>
+                            <li><a href="postav.html">Поставщикам</a></li>
+                            <li><a href="review.html">Отзывы</a></li>
+                            <li><a href="contacts.html">Контакты</a></li>
+                        </ul>
+                        <ul>
+                            <li><a href="install-cond.html">Установака кондиционеров</a></li>
+                            <li><a href="faq.html">Вопрос-ответ ( FAQ )</a></li>
+                            <li><a href="sales.html">Акции и скидки</a></li>
+                            <li><a href="#">Персональные данные</a></li>
+                            <li><a href="#">Публичная оферта</a></li>
+                        </ul>
+                    </nav>
+                </div>
+
+                <div class="footer-pay">
+                    <div class="footer__title">Доступные способы оплаты</div>
+                    <div class="footer-pay__line">
+                        <img src="img/footer/footer-money.png" alt="Наличные">
+                        <img src="img/footer/footer-mir.png" alt="Картой МИР">
+                        <img src="img/footer/footer-visa.png" alt="Картой VISA">
+                        <img src="img/footer/footer-mc.png" alt="Картой MasterCard">
+                    </div>
+                    <div class="footer-pay__reviews footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/otziv-1.png" alt="">
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/otziv-2.png" alt="">
+                        </a>
+                    </div>
+                    <div class="footer-pay__socials footer-pay__line">
+                        <a href="#">
+                            <img src="img/footer/vk.png" alt="">
+                            <span>Вконтакте</span>
+                        </a>
+                        <a href="#">
+                            <img src="img/footer/ok.png" alt="">
+                            <span>Одноклассники</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-info">
+        © 2009-2023. Aventa96.ru - онлайн климат-маркет Екатеринбурга. Все права защищены.
+    </div>
+</footer>
+
+    <div class="popup" id="dialog-feedback">
+    <h3 class="popup__title">Обратная связь</h3>
+    <div class="popup__desc">Заполните форму и наш менеджер свяжется с вами</div>
+    <div class="popup__wrap">
+        <form action="">
+            <div class="popup__row">
+                <label for="feedback-name">Ваше имя</label>
+                <input type="text" id="feedback-name" name="name">
+            </div>
+            <div class="popup__row">
+                <label for="feedback-email">Email</label>
+                <input type="email" id="feedback-email" name="email">
+            </div>
+            <div class="popup__row">
+                <div class="checkbox">
+                    <input type="checkbox" id="agreed">
+                    <label for="agreed">Даю согласие на обработку <a href="#">персональных данных</a></label>
+                </div>
+            </div>
+            <button class="btn btn-large btn-primary">Отправить</button>
+        </form>
+
+        <img src="img/feedback.png" class="popup__img" alt="">
+    </div>
+</div>
+
+<div class="popup" id="dialog-question">
+    <h3 class="popup__title">Задать свой вопрос</h3>
+    <div class="popup__desc">
+        Задайте нам свой вопрос, воспользовавшись данной формой.<br>
+        Через некоторое время ваш вопрос и ответ на него появятся в разделе Вопрос — ответ (FAQ).<br>
+        Надеемся, что наше с вами общение будет приятным, удобным и полезным.
+    </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="question-name">ФИО</label>
+            <input type="text" id="question-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="question-email">Email</label>
+            <input type="email" id="question-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="question-pass">Пароль</label>
+            <input type="password" id="question-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="">Ваш вопрос</label>
+            <textarea class="" name="" id="" cols="30" rows="3"></textarea>
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-in">
+    <h3 class="popup__title">Вход</h3>
+    <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signin-email">Email</label>
+            <input type="email" id="signin-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signin-pass">Пароль</label>
+            <input type="password" id="signin-pass" name="password">
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+        <div class="popup__footer">
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox
+                data-src="#dialog-sign-up">Регистрация</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-up">
+    <h3 class="popup__title">Cоздать аккаунт</h3>
+    <div class="popup__desc">Создайте личный кабинет </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="signup-name">ФИО</label>
+            <input type="text" id="signup-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="signup-phone">Номер телефона</label>
+            <input type="tel" id="signup-phone" name="phone">
+        </div>
+        <div class="popup__row">
+            <label for="signup-email">Email</label>
+            <input type="email" id="signup-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass">Пароль</label>
+            <input type="password" id="signup-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="signup-pass-approve">Подтвердите пароль</label>
+            <input type="password" id="signup-pass-approve" name="password-approve">
+        </div>
+        <button class="btn btn-large btn-primary">Зарегистрироваться</button>
+        <div class="popup__footer">
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox
+                data-src="#dialog-sign-in">Вход</button>
+        </div>
+    </form>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-cart">
+    <h3 class="popup__title">Товар добавлен в корзину</h3>
+
+    <div class="popup-card">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+        <div class="counter-actions">
+            <button class="btn">-</button>
+            <span>1</span>
+            <button class="btn">+</button>
+        </div>
+        <div class="popup-card__price">110 325 ₽</div>
+    </div>
+
+    <div class="popup-actions">
+        <div class="popup-actions__info">
+            В корзине
+            <span>23 товара</span>
+        </div>
+
+        <div class="popup-actions__buttons">
+            <button class="btn btn-secondary js-modal-close">Продолжить покупки</button>
+            <a href="#" class="btn btn-primary">Перейти в корзину</a>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-compare">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>сравнение</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="popup popup--wide" id="dialog-add-favorite">
+    <div class="popup-card popup-card--mini">
+        <img src="img/catalog/catalog-card.jpg" alt="">
+        <div class="popup-card__content">
+            <a href="#" class="popup-card__title">Кондиционер SHUFT SFTG-06HN1</a>
+            <div class="popup-card__desc">Успешно добавлен в <span>избранное</span></div>
+            <div class="popup-actions">
+                <button class="btn btn-primary js-modal-close">Продолжить покупки</button>
+            </div>
+        </div>
+    </div>
+</div>
+    <script src="js/libs.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

@@ -1,3 +1,57 @@
+<div class="popup" id="dialog-feedback">
+    <h3 class="popup__title">Обратная связь</h3>
+    <div class="popup__desc">Заполните форму и наш менеджер свяжется с вами</div>
+    <div class="popup__wrap">
+        <form action="">
+            <div class="popup__row">
+                <label for="feedback-name">Ваше имя</label>
+                <input type="text" id="feedback-name" name="name">
+            </div>
+            <div class="popup__row">
+                <label for="feedback-email">Email</label>
+                <input type="email" id="feedback-email" name="email">
+            </div>
+            <div class="popup__row">
+                <div class="checkbox">
+                    <input type="checkbox" id="agreed">
+                    <label for="agreed">Даю согласие на обработку <a href="#">персональных данных</a></label>
+                </div>
+            </div>
+            <button class="btn btn-large btn-primary">Отправить</button>
+        </form>
+
+        <img src="img/feedback.png" class="popup__img" alt="">
+    </div>
+</div>
+
+<div class="popup" id="dialog-question">
+    <h3 class="popup__title">Задать свой вопрос</h3>
+    <div class="popup__desc">
+        Задайте нам свой вопрос, воспользовавшись данной формой.<br>
+        Через некоторое время ваш вопрос и ответ на него появятся в разделе Вопрос — ответ (FAQ).<br>
+        Надеемся, что наше с вами общение будет приятным, удобным и полезным.
+    </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="question-name">ФИО</label>
+            <input type="text" id="question-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="question-email">Email</label>
+            <input type="email" id="question-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="question-pass">Пароль</label>
+            <input type="password" id="question-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="">Ваш вопрос</label>
+            <textarea class="" name="" id="" cols="30" rows="3"></textarea>
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+    </form>
+</div>
+
 <div class="popup" id="dialog-sign-in">
     <h3 class="popup__title">Вход</h3>
     <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
@@ -12,7 +66,8 @@
         </div>
         <button class="btn btn-large btn-primary">Отправить</button>
         <div class="popup__footer">
-            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-up">Регистрация</button>
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox
+                data-src="#dialog-sign-up">Регистрация</button>
         </div>
     </form>
 </div>
@@ -43,7 +98,8 @@
         </div>
         <button class="btn btn-large btn-primary">Зарегистрироваться</button>
         <div class="popup__footer">
-            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-in">Вход</button>
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox
+                data-src="#dialog-sign-in">Вход</button>
         </div>
     </form>
 </div>

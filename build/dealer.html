@@ -118,7 +118,7 @@
                         </a>
                     </div>
 
-                    <button class="btn">
+                    <button class="btn" data-fancybox="feedback" data-src="#dialog-feedback">
                         <img src="img/header/envelope.svg" alt="">
                         <span>Обратная связь</span>
                     </button>
@@ -254,6 +254,9 @@
                 <li class="breadcrumbs__item breadcrumbs__item--home">
                     <a href="/">Главная</a>
                 </li>
+                <li class="breadcrumbs__item">
+                    <a href="about.html">Авента96.ру - это...</a>
+                </li>
                 <li class="breadcrumbs__item breadcrumbs__item--current">
                     Официальный дилер
                 </li>
@@ -261,16 +264,13 @@
 
             <div class="overview">
                 <aside class="overview-tabs">
-    <a href="how-order.html" class="btn active">Как заказать</a>
+    <a href="company.html" class="btn">Информация о компании</a>
     <a href="dealer.html" class="btn">Официальный дилер</a>
-    <a href="delivery.html" class="btn">Доставка</a>
-    <a href="pickup.html" class="btn">Самовывоз</a>
-    <a href="pays.html" class="btn">Способы оплаты</a>
-    <a href="sales.html" class="btn btn--green">Скидки и акции</a>
-    <a href="garanty.html" class="btn">Гарантии</a>
-
-    <a href="install-cond.html" class="link">Установка кондиционеров</a>
-    <a href="faq.html" class="btn">Вопрос-ответ</a>
+    <a href="news.html" class="btn">Новости</a>
+    <a href="articles.html" class="btn">Статьи</a>
+    <a href="postav.html" class="btn">Поставщикам</a>
+    <a href="review.html" class="btn">Отзывы о магазине</a>
+    <a href="contacts.html" class="btn">Контакты</a>
 </aside>
 
                 <div class="overview-content">
@@ -453,16 +453,16 @@
                             <li><a href="how-order.html">Как заказать</a></li>
                         </ul>
                         <ul>
-                            <li><a href="#">Информация о компании</a></li>
+                            <li><a href="about.html">Информация о компании</a></li>
                             <li><a href="dealer.html">Официальный дилер</a></li>
-                            <li><a href="#">Поставщикам</a></li>
-                            <li><a href="#">Отзывы</a></li>
+                            <li><a href="postav.html">Поставщикам</a></li>
+                            <li><a href="review.html">Отзывы</a></li>
                             <li><a href="contacts.html">Контакты</a></li>
                         </ul>
                         <ul>
                             <li><a href="install-cond.html">Установака кондиционеров</a></li>
                             <li><a href="faq.html">Вопрос-ответ ( FAQ )</a></li>
-                            <li><a href="#">Акции и скидки</a></li>
+                            <li><a href="sales.html">Акции и скидки</a></li>
                             <li><a href="#">Персональные данные</a></li>
                             <li><a href="#">Публичная оферта</a></li>
                         </ul>
@@ -504,7 +504,61 @@
     </div>
 </footer>
 
-    <div class="popup" id="dialog-sign-in">
+    <div class="popup" id="dialog-feedback">
+    <h3 class="popup__title">Обратная связь</h3>
+    <div class="popup__desc">Заполните форму и наш менеджер свяжется с вами</div>
+    <div class="popup__wrap">
+        <form action="">
+            <div class="popup__row">
+                <label for="feedback-name">Ваше имя</label>
+                <input type="text" id="feedback-name" name="name">
+            </div>
+            <div class="popup__row">
+                <label for="feedback-email">Email</label>
+                <input type="email" id="feedback-email" name="email">
+            </div>
+            <div class="popup__row">
+                <div class="checkbox">
+                    <input type="checkbox" id="agreed">
+                    <label for="agreed">Даю согласие на обработку <a href="#">персональных данных</a></label>
+                </div>
+            </div>
+            <button class="btn btn-large btn-primary">Отправить</button>
+        </form>
+
+        <img src="img/feedback.png" class="popup__img" alt="">
+    </div>
+</div>
+
+<div class="popup" id="dialog-question">
+    <h3 class="popup__title">Задать свой вопрос</h3>
+    <div class="popup__desc">
+        Задайте нам свой вопрос, воспользовавшись данной формой.<br>
+        Через некоторое время ваш вопрос и ответ на него появятся в разделе Вопрос — ответ (FAQ).<br>
+        Надеемся, что наше с вами общение будет приятным, удобным и полезным.
+    </div>
+    <form action="">
+        <div class="popup__row">
+            <label for="question-name">ФИО</label>
+            <input type="text" id="question-name" name="name">
+        </div>
+        <div class="popup__row">
+            <label for="question-email">Email</label>
+            <input type="email" id="question-email" name="email">
+        </div>
+        <div class="popup__row">
+            <label for="question-pass">Пароль</label>
+            <input type="password" id="question-pass" name="password">
+        </div>
+        <div class="popup__row">
+            <label for="">Ваш вопрос</label>
+            <textarea class="" name="" id="" cols="30" rows="3"></textarea>
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+    </form>
+</div>
+
+<div class="popup" id="dialog-sign-in">
     <h3 class="popup__title">Вход</h3>
     <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
     <form action="">
@@ -518,7 +572,8 @@
         </div>
         <button class="btn btn-large btn-primary">Отправить</button>
         <div class="popup__footer">
-            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-up">Регистрация</button>
+            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox
+                data-src="#dialog-sign-up">Регистрация</button>
         </div>
     </form>
 </div>
@@ -549,7 +604,8 @@
         </div>
         <button class="btn btn-large btn-primary">Зарегистрироваться</button>
         <div class="popup__footer">
-            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox data-src="#dialog-sign-in">Вход</button>
+            У вас есть аккаунт? <button type="button" class="btn btn-link" data-fancybox
+                data-src="#dialog-sign-in">Вход</button>
         </div>
     </form>
 </div>

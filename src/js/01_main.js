@@ -55,14 +55,21 @@ $(document).ready(function() {
 
     const swiperHits = new Swiper(".swiper-hits", {
         loop: true,
-        slidesPerView: "auto",
-        spaceBetween: 20,
+        slidesPerView: 1,
+        spaceBetween: 0,
 
         freeMode: true,
 
         // autoplay: {
         //     delay: 3000,
         // },
+
+        breakpoints: {
+            640: {
+                slidesPerView: "auto",
+                spaceBetween: 20,
+            }
+        },
 
         navigation: {
             nextEl: ".hits-swiper-button-next",

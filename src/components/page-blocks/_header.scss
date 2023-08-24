@@ -16,6 +16,7 @@
         padding: 20px 0 15px;
         @include _760 {
             padding: 10px 0;
+            display: none;
         }
 
         &__left {
@@ -163,6 +164,10 @@
         width: 276px;
         flex: none;
         transform: translate(-10px, -5px);
+        @include _760 {
+            width: 180px;
+            transform: none;
+        }
     }
 
     .header-catalog {
@@ -185,6 +190,7 @@
         }
         @include _760 {
             margin-top: 0;
+            display: none;
         }
 
         &:hover {
@@ -239,6 +245,9 @@
         margin-left: 28px;
         @include _1420 {
             flex: 1 1 35%;
+        }
+        @include _760 {
+            display: none;
         }
 
         &:hover {
@@ -295,6 +304,11 @@
             justify-content: space-between;
             text-decoration: none;
             text-align: center;
+            @include _760 {
+                &:not(:last-of-type) {
+                    display: none;
+                }
+            }
 
             &__img {
                 position: relative;
@@ -345,6 +359,9 @@
         margin-left: 12px;
         text-decoration: none;
         text-align: center;
+        @include _760 {
+            display: none;
+        }
     }
 }
 

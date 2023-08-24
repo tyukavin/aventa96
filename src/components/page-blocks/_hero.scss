@@ -3,6 +3,10 @@
     gap: 20px;
     grid-template-columns: calc(65.2% - 10px) calc(34.8% - 10px);
     margin-bottom: 25px;
+    @include _760 {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 35px;
+    }
 
     .banners-item {
         border-radius: 13px;
@@ -10,6 +14,9 @@
 
         &--lg {
             grid-row: 1/3;
+            @include _760 {
+                grid-column: 1/3;
+            }
         }
 
         img {
@@ -32,6 +39,10 @@
             top: 50%;
             transform: translateY(-50%);
             z-index: 5;
+            @include _760 {
+                height: 45px;
+                width: 45px;
+            }
 
             &-prev {
                 left: 20px;
@@ -51,6 +62,9 @@
     @include _760 {
         overflow-y: auto;
         width: 100%;
+        gap: 16px;
+        padding-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .category-item {
@@ -61,7 +75,9 @@
         text-align: center;
         text-decoration: none;
         @include _760 {
-            width: 20%;
+            // flex: 1 1 80vw;
+            width: 100%;
+            min-width: 190px;
         }
 
         &__img {
@@ -69,6 +85,9 @@
             overflow: hidden;
             max-height: 233px;
             margin-bottom: 23px;
+            @include _760 {
+                margin-bottom: 15px;
+            }
         }
 
         &__caption {
@@ -77,6 +96,10 @@
             font-weight: 500;
             font-family: 'Acrom', sans-serif;
             line-height: 21px;
+            @include _760 {
+                font-size: 14px;
+                line-height: 18px;
+            }
         }
     }
 }

@@ -13,11 +13,85 @@
     font-size: 14px;
 }
 
+.review-form-wrap {
+    margin-bottom: 50px;
+}
+
 .form-review {
     display: flex;
+    gap: 45px;
+
+    &__col {
+        flex: 1 1;
+    }
 
     &__row {
         display: flex;
+    }
 
+    .review-fields {
+        gap: 20px;
+
+        textarea {
+            flex: 1 1;
+        }
+    }
+
+    .input {
+        padding: 7px 15px;
+
+        &::placeholder {
+            color: #828282;
+            font-weight: 400;
+        }
+    }
+
+    .inputs {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        flex: 1 1;
+    }
+
+    .hint-agreed {
+        color: #8a8a8a;
+        font-size: 14px;
+        max-width: 45%;
+
+        .btn {
+            background-color: #FE8F3D;
+            border-radius: 9px;
+            color: #fff;
+            font-weight: 400;
+            padding: 15px 45px;
+        }
+    }
+
+    .stars-review {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 15px;
+        width: 100%;
+
+        h4 {
+            margin: 0;
+        }
+    }
+}
+
+.sorting {
+    display: flex;
+    margin-bottom: 30px;
+    font-size: 16px;
+
+    .head {
+        color: #111;
+        margin-right: 25px;
+    }
+
+    a {
+        color: #2F69FF;
+        margin-right: 15px;
     }
 }

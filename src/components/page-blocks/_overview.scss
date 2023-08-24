@@ -48,8 +48,8 @@
             border-color: #59FF2F;
         }
 
+        &:hover,
         &.active {
-            pointer-events: none;
             color: #fff;
             background-color: #2F69FF;
         }
@@ -111,5 +111,29 @@
 
     &.active {
         display: block;
+    }
+}
+
+.about-list {
+    list-style: none;
+    padding-left: 35px;
+
+    li {
+        position: relative;
+    }
+
+    &__caption {
+        font-size: 18px;
+        margin-bottom: 10px;
+        font-weight: 600;
+
+        .digit {
+            position: absolute;
+            left: -35px;
+            top: -2px;
+            font-weight: 700;
+            font-size: 20px;
+            color: #fe5800;
+        }
     }
 }

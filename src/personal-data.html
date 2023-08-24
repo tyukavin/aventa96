@@ -26,6 +26,13 @@
                 @@include('components/page-blocks/_personal-side.html')
 
                 <div class="personal-content">
+                    <h3 class="personal-content__head">Доброго времени суток, Морозов Виктор Владиславович!</h3>
+                    <p class="personal-content__desc">
+                        Вы находитесь в личном кабинете, здесь Вы можете<br>
+                        редактировать личные данные и смотреть историю закзов
+                    </p>
+
+                    <h3>Персональные данные</h3>
                     <form class="personal-form" action="">
                         <div class="personal-form__row">
                             <div class="personal-form__field">
@@ -66,9 +73,91 @@
                             </div>
                         </div>
 
+                        <!-- <div class="personal-form__row">
+                            <div class="btn btn-primary btn-xs">
+                                Сохранить изменения
+                            </div>
+                        </div> -->
+                    </form>
+
+                    <h3>Юридическим лицам</h3>
+                    <form class="personal-form" action="">
+                        <div class="personal-form__row">
+                            <div class="personal-form__field">
+                                <label for="">
+                                    Наименование  организации <span class="required">*</span>
+                                </label>
+                                <input type="text" class="input">
+                            </div>
+
+                            <div class="personal-form__field">
+                                <label for="">
+                                    КПП <span class="required">*</span>
+                                </label>
+                                <input type="email" class="input">
+                            </div>
+
+                            <div class="personal-form__field">
+                                <label for="">
+                                    БИК <span class="required">*</span>
+                                </label>
+                                <input type="tel" class="input">
+                            </div>
+                        </div>
+
+                        <div class="personal-form__row">
+                            <div class="personal-form__field">
+                                <label for="">
+                                    Р/cч
+                                </label>
+                                <input type="text" class="input">
+                            </div>
+
+                            <div class="personal-form__field">
+                                <label for="">
+                                    Фактический адрес
+                                </label>
+                                <input type="text" class="input">
+                            </div>
+
+                            <div class="personal-form__field">
+                                <label for="">
+                                    ИНН
+                                </label>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+
                         <div class="personal-form__row">
                             <div class="btn btn-primary btn-xs">
                                 Сохранить изменения
+                            </div>
+                        </div>
+                    </form>
+
+                    <h3>Изменить пароль</h3>
+                    <form class="personal-form" action="">
+                        <div class="personal-form__row">
+                            <div class="personal-form__field">
+                                <label for="">
+                                    Новый пароль <span class="required">*</span>
+                                </label>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+
+                        <div class="personal-form__row">
+                            <div class="personal-form__field">
+                                <label for="">
+                                    Повторите пароль
+                                </label>
+                                <input type="text" class="input">
+                            </div>
+                        </div>
+
+                        <div class="personal-form__row">
+                            <div class="btn btn-primary btn-xs">
+                                Изменить пароль
                             </div>
                         </div>
                     </form>

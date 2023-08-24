@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"ru",
+"title":"Помощь покупателю",
+"description":"Онлайн климат-маркет",
+"favicon":"img/favicon/favicon",
+})
+
+<body>
+    @@include('components/page-blocks/_header.html')
+
+    <main class="main">
+        <div class="container">
+            <ul class="breadcrumbs">
+                <li class="breadcrumbs__item breadcrumbs__item--home">
+                    <a href="/">Главная</a>
+                </li>
+                <li class="breadcrumbs__item breadcrumbs__item--current">
+                    Помощь покупателю
+                </li>
+            </ul>
+
+            <div class="overview">
+                @@include('components/page-blocks/_overview-tabs.html')
+
+                <div class="overview-content">
+                    <h1 class="title-page">Помощь покупателю</h1>
+
+                    <p>
+                        Мы рады видеть Вас в нашем интернет-магазине климатической техники - в онлайн климат-маркете
+                        Авента96.ру.
+                    </p>
+
+                    <p>
+                        Надеемся, что пребывание на страницах нашего сайта будет приятно Вам, а процесс покупки —
+                        простым, удобным и выгодным. Выбирая наш интернет-магазин, Вы можете быть уверены, что
+                        приобретаете качественный товар.
+                    </p>
+
+                    <p>
+                        Квалифицированные менеджеры-консультанты всегда готовы прийти Вам на помощь при выборе товара
+                        или оформлении покупки. Также в помощь Вам создан этот раздел, где Вы сможете найти ответы на
+                        многие вопросы, касающиеся работы нашего интернет-магазина. Если Вы все-таки не смогли найти
+                        интересующую Вас информацию, можете отправить нам запрос с помощью формы обратной связи.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    @@include('components/page-blocks/_footer.html')
+    @@include('components/page-blocks/_includes.html')
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

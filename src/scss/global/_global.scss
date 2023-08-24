@@ -57,6 +57,9 @@ h6 {
 h2 {
     font-size: 44px;
     font-weight: 300;
+    @include _760 {
+        font-size: 34px;
+    }
 }
 
 h3 {
@@ -133,9 +136,19 @@ img {
     align-items: center;
     margin-bottom: 26px;
     font-family: 'Acrom', sans-serif;
+    width: 100%;
+    @include _760 {
+        gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 18px;
+    }
 
     h2 {
         margin-right: 40px;
+        margin-bottom: 0;
+        @include _760 {
+            margin-right: 0;
+        }
     }
 
     a {
@@ -143,17 +156,27 @@ img {
         font-size: 18px;
         font-weight: 700;
         text-decoration: none;
+        padding-right: 28px;
         position: relative;
         transform: translateY(3px);
+        @include _760 {
+            font-size: 14px;
+        }
 
         &::after {
             content: '';
             background-image: url(../img/arrow-left.svg);
+            background-position: center;
             position: absolute;
-            left: calc(100% + 10px);
+            // left: calc(100% + 10px);
+            right: 0;
             height: 21px;
             width: 21px;
             transition: transform .15s;
+            @include _760 {
+                height: 18px;
+                width: 18px;
+            }
         }
 
         &:hover {
@@ -406,6 +429,10 @@ img {
             flex: 1 1 100%;
             min-width: 330px;
             width: 100%;
+            @include _760 {
+                min-width: 100%;
+                max-width: 100%;
+            }
         }
     }
 
@@ -418,11 +445,17 @@ img {
         z-index: 5;
 
         &-prev {
-            left: -62px;
+            left: 0;
+            @include _760 {
+                left: 10px;
+            }
         }
 
         &-next {
-            right: -62px;
+            right: 0;
+            @include _760 {
+                right: 10px;
+            }
         }
     }
 }
@@ -527,10 +560,11 @@ img {
         content: '';
         border-radius: 50%;
         position: absolute;
-        top: 2px;
+        top: 50%;
         left: 0;
         height: 10px;
         width: 10px;
+        transform: translateY(-50%);
     }
 
     &--available {
@@ -566,6 +600,10 @@ img {
 .article-wrapper {
     display: flex;
     gap: 20px;
+    @include _760 {
+        gap: 30px;
+        flex-wrap: wrap;
+    }
 }
 
 .article-item {
@@ -574,11 +612,17 @@ img {
     font-weight: 500;
     line-height: 19px;
     width: calc(100% / 3);
+    @include _760 {
+        width: 100%;
+    }
 
     &__img {
         border-radius: 5px;
         overflow: hidden;
         margin-bottom: 25px;
+        @include _760 {
+            margin-bottom: 15px;
+        }
 
         img {
             object-fit: cover;
@@ -592,6 +636,9 @@ img {
         margin-bottom: 20px;
         padding-left: 22px;
         position: relative;
+        @include _760 {
+            margin-bottom: 10px;
+        }
 
         &::before {
             content: '';
@@ -618,6 +665,9 @@ img {
         display: inline-block;
         margin-top: 30px;
         text-decoration: none;
+        @include _760 {
+            margin-top: 0;
+        }
 
         &:hover {
             text-decoration: underline;
@@ -627,6 +677,9 @@ img {
 
 .dealers {
     margin-bottom: 80px;
+    @include _760 {
+        margin-bottom: 50px;
+    }
 
     &__title {
         display: flex;
@@ -635,6 +688,9 @@ img {
         font-weight: 500;
         margin-bottom: 45px;
         text-align: center;
+        @include _760 {
+            flex-direction: column;
+        }
 
         h2 {
             font-family: 'Mont', sans-serif;
@@ -665,9 +721,17 @@ img {
         justify-content: center;
         align-items: center;
         gap: 35px;
+        @include _760 {
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 20px;
+        }
 
         a {
             transition: filter .15s;
+            @include _760 {
+                width: 27%;
+            }
 
             &:hover {
                 filter: grayscale(1);
@@ -688,11 +752,19 @@ img {
     display: flex;
     justify-content: center;
     align-items: center;
+    @include _760 {
+        flex-direction: column;
+        margin-bottom: 50px;
+    }
 
     p {
         font-family: 'Acrom', sans-serif;
         font-weight: 600;
         margin: 0 20px 0 15px;
+        @include _760 {
+            margin: 10px 0;
+            text-align: center;
+        }
 
         a {
             color: #FEA901;
