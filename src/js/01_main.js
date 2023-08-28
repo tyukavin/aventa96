@@ -79,6 +79,7 @@ $(document).ready(function() {
 
     $(".header-catalog").click(function() {
 
+        $(this).toggleClass("active");
         $(".menu").toggleClass("show");
         $("html").toggleClass("no-scroll");
     });
@@ -144,5 +145,15 @@ $(document).ready(function() {
 
         $(this).text($(this).text() === "Свернуть" ? "Ответ магазина" : "Свернуть");
         $(this).parent().find(".faq-response").toggleClass("active");
+    });
+
+    $(".js-btn-menu").click(function() {
+
+        $(".menu-mobile").addClass("open");
+    });
+
+    $(".js-btn-menu-close").click(function() {
+
+        $(".menu-mobile").removeClass("open");
     });
 });

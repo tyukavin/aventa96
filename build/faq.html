@@ -70,7 +70,13 @@
             </div>
 
             <button class="header-catalog">
-                <img src="img/header/menu.svg" alt="">
+                <svg class="header-catalog-icon header-catalog-icon--close" version="1.1" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 512 512" xml:space="preserve">
+                    <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512
+                        512,452.922 315.076,256"/>
+                </svg>
+                <svg class="header-catalog-icon header-catalog-icon--menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+                </svg>
                 <span>Каталог товаров</span>
             </button>
 
@@ -147,6 +153,10 @@
                     </div>
                     <div class="header-link__caption">Корзина</div>
                 </a>
+
+                <button class="btn-menu js-btn-menu">
+                    <img src="img/menu.svg" alt="">
+                </button>
             </div>
 
             <a href="cart.html" class="header-cart">0 ₽</a>
@@ -284,13 +294,13 @@
                             </button>
                         </div>
 
-                        <div class="faq-tags">
-                            <a href="#" class="faq-tags__item active">Все вопросы</a>
-                            <a href="#" class="faq-tags__item">Тепловое оборудование и водонагреватели</a>
-                            <a href="#" class="faq-tags__item">Монтаж и техническое обслуживание</a>
-                            <a href="#" class="faq-tags__item">Кондиционированние и вентиляция</a>
-                            <a href="#" class="faq-tags__item">Очищение, увлажение, осушение воздуха</a>
-                            <a href="#" class="faq-tags__item">Вопрос по работе магазина</a>
+                        <div class="tags">
+                            <a href="#" class="tags__item active">Все вопросы</a>
+                            <a href="#" class="tags__item">Тепловое оборудование и водонагреватели</a>
+                            <a href="#" class="tags__item">Монтаж и техническое обслуживание</a>
+                            <a href="#" class="tags__item">Кондиционированние и вентиляция</a>
+                            <a href="#" class="tags__item">Очищение, увлажение, осушение воздуха</a>
+                            <a href="#" class="tags__item">Вопрос по работе магазина</a>
                         </div>
 
                         <div class="faq-list">
@@ -490,7 +500,14 @@
     </div>
 </footer>
 
-    <div class="popup" id="dialog-feedback">
+    <div class="menu-mobile">
+    <button class="btn-menu-close js-btn-menu-close">
+        <img src="img/close.svg" alt="">
+    </button>
+</div>
+
+
+<div class="popup" id="dialog-feedback">
     <h3 class="popup__title">Обратная связь</h3>
     <div class="popup__desc">Заполните форму и наш менеджер свяжется с вами</div>
     <div class="popup__wrap">

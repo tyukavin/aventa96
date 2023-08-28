@@ -183,7 +183,8 @@
         display: inline-flex;
         align-items: center;
         margin-right: 28px;
-        transition: .15s;
+        transition: box-shadow .15s, background-color .15s;
+        user-select: none;
         @include _1420 {
             margin-top: 15px;
             order: 2;
@@ -198,8 +199,26 @@
             box-shadow: 0 0 15px -2px #2F69FF;
         }
 
-        img {
-            margin-right: 5px;
+        &.active {
+
+            .header-catalog-icon--close {
+                display: block;
+            }
+
+            .header-catalog-icon--menu {
+                display: none;
+            }
+        }
+
+        &-icon {
+            fill: currentColor;
+            height: 18px;
+            width: 18px;
+            margin-right: 8px;
+
+            &--close {
+                display: none;
+            }
         }
     }
 
@@ -295,6 +314,9 @@
     &__links {
         display: flex;
         margin-left: 5px;
+        @include _760 {
+            align-items: center;
+        }
 
         .header-link {
             margin: 0 8px;
@@ -341,6 +363,9 @@
                 color: #707070;
                 font-size: 14px;
                 font-weight: 500;
+                @include _760 {
+                    display: none;
+                }
             }
         }
     }
@@ -637,5 +662,48 @@
         img {
             width: 100%;
         }
+    }
+}
+
+.btn-menu {
+    display: none;
+    @include _760 {
+        @include no-btn();
+        display: block;
+        padding: 0;
+        margin-left: 15px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.btn-menu-close {
+    @include _760 {
+        @include no-btn();
+        position: absolute;
+        top: 30px;
+        right: 20px;
+        height: 30px;
+        width: 30px;
+    }
+}
+
+.menu-mobile {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #fff;
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(20px);
+    transition: .2s;
+    z-index: 999;
+
+    &.open {
+        opacity: 1;
+        pointer-events: all;
+        transform: none;
     }
 }

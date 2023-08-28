@@ -50,7 +50,13 @@
             </div>
 
             <button class="header-catalog">
-                <img src="img/header/menu.svg" alt="">
+                <svg class="header-catalog-icon header-catalog-icon--close" version="1.1" xmlns="http://www.w3.org/2000/svg"viewBox="0 0 512 512" xml:space="preserve">
+                    <polygon points="512,59.076 452.922,0 256,196.922 59.076,0 0,59.076 196.922,256 0,452.922 59.076,512 256,315.076 452.922,512
+                        512,452.922 315.076,256"/>
+                </svg>
+                <svg class="header-catalog-icon header-catalog-icon--menu" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+                    <path d="M 0 7.5 L 0 12.5 L 50 12.5 L 50 7.5 Z M 0 22.5 L 0 27.5 L 50 27.5 L 50 22.5 Z M 0 37.5 L 0 42.5 L 50 42.5 L 50 37.5 Z"/>
+                </svg>
                 <span>Каталог товаров</span>
             </button>
 
@@ -127,6 +133,10 @@
                     </div>
                     <div class="header-link__caption">Корзина</div>
                 </a>
+
+                <button class="btn-menu js-btn-menu">
+                    <img src="img/menu.svg" alt="">
+                </button>
             </div>
 
             <a href="cart.html" class="header-cart">0 ₽</a>
