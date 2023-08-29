@@ -2,9 +2,16 @@
     display: flex;
     gap: 35px;
     margin-bottom: 35px;
+    @include _760 {
+        flex-wrap: wrap;
+    }
 
     &__img {
         flex: 1 0 45%;
+        @include _760 {
+            order: 1;
+            flex: 1 1 100%;
+        }
     }
 }
 
@@ -20,6 +27,11 @@
 .form-review {
     display: flex;
     gap: 45px;
+    @include _760 {
+        flex-direction: column;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 
     &__col {
         flex: 1 1;
@@ -31,6 +43,10 @@
 
     .review-fields {
         gap: 20px;
+        @include _760 {
+            flex-direction: column;
+            gap: 15px;
+        }
 
         textarea {
             flex: 1 1;
@@ -51,12 +67,18 @@
         flex-direction: column;
         gap: 20px;
         flex: 1 1;
+        @include _760 {
+            gap: 15px;
+        }
     }
 
     .hint-agreed {
         color: #8a8a8a;
         font-size: 14px;
         max-width: 45%;
+        @include _760 {
+            max-width: none;
+        }
 
         .btn {
             background-color: #FE8F3D;

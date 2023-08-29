@@ -5,6 +5,11 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 35px;
+        @include _760 {
+            flex-wrap: wrap;
+            gap: 15px;
+            margin-bottom: 30px;
+        }
 
         .title-page {
             margin-bottom: 0;
@@ -18,6 +23,10 @@
 
 .tags {
     margin-bottom: 40px;
+    width: 100%;
+    @include _760 {
+        margin-bottom: 25px;
+    }
 
     &__row {
         display: flex;
@@ -26,6 +35,9 @@
         padding-bottom: 10px;
         margin-bottom: 10px;
         border-bottom: 1px solid #d5d5d5;
+        @include _760 {
+            flex-wrap: wrap;
+        }
 
         &:last-of-type {
             border-bottom: none;
@@ -42,6 +54,10 @@
         padding: 4px 14px;
         text-decoration: none;
         transition: color .2s, border-color .2s;
+        @include _760 {
+            font-size: 13px;
+            padding: 3px 8px;
+        }
 
         &:hover {
             border-color: #2f69ff;
@@ -62,6 +78,9 @@
 
 .faq-list {
     margin-bottom: 100px;
+    @include _760 {
+        margin-bottom: 40px;
+    }
 }
 
 .faq-item {
@@ -69,6 +88,9 @@
     border: 1px solid #EBEDEE;
     padding: 30px 30px 30px 60px;
     width: 100%;
+    @include _760 {
+        padding: 20px;
+    }
 
     & + & {
         margin-top: 25px;
@@ -79,22 +101,43 @@
         align-items: center;
         justify-content: space-between;
         margin-bottom: 25px;
+        @include _760 {
+            row-gap: 10px;
+            flex-wrap: wrap;
+        }
     }
 
     &__left {
         display: flex;
         align-items: center;
         gap: 25px;
+        @include _760 {
+            gap: 15px;
+        }
+
+        img {
+            @include _760 {
+                &:first-of-type {
+                    width: 25px;
+                }
+            }
+        }
 
         h4 {
             font-size: 18px;
             margin-bottom: 0;
+            @include _760 {
+                font-size: 16px;
+            }
         }
     }
 
     &__topic {
         color: #808080;
         font-size: 14px;
+        @include _760 {
+            font-size: 12px;
+        }
     }
 
     &__content {
@@ -130,10 +173,17 @@
     margin-left: 50px;
     padding-left: 20px;
     border-left: 2px solid #2f69ff;
+    @include _760 {
+        margin-top: 20px;
+        margin-left: 0;
+    }
 
     &__head {
         font-weight: 700;
         margin-bottom: 20px;
+        @include _760 {
+            margin-bottom: 15px;
+        }
     }
 
     &.active {

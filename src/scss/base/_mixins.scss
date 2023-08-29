@@ -70,3 +70,19 @@
 	padding: 0 #{$padding};
 	margin: 0 auto;
 }
+
+@mixin scrollbar() {
+	&::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-track {
+        box-shadow: inset 0 0 5px grey;
+        border-radius: 10px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: #2F69FF;
+        border-radius: 10px;
+    }
+}

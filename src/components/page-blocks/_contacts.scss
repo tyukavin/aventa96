@@ -3,16 +3,27 @@
     gap: 50px;
     margin-bottom: 60px;
     width: 100%;
+    @include _760 {
+        flex-wrap: wrap;
+        gap: 25px;
+        margin-bottom: 40px;
+    }
 }
 
 .contacts-map {
     flex: 1 1 65%;
+    @include _760 {
+        flex: 1 1 100%;
+    }
 }
 
 .contacts-main {
 
     h1 {
         margin-bottom: 25px;
+        @include _760 {
+            margin-bottom: 15px;
+        }
     }
 
     p {
@@ -90,9 +101,16 @@
         margin-bottom: 0;
     }
 
+    &__sub {
+        @include _760 {
+            flex: 1 1 100%;
+        }
+    }
+
     &__head {
         display: flex;
         align-items: baseline;
+        flex-wrap: wrap;
         gap: 12px;
         margin-bottom: 15px;
     }
@@ -100,6 +118,10 @@
     h2 {
         font-size: 24px;
         font-weight: 500;
+        margin-bottom: 0;
+        @include _760 {
+            margin-bottom: 0;
+        }
     }
 
     table {
@@ -112,6 +134,10 @@
 
             &:first-child {
                 font-weight: 600;
+                @include _760 {
+                    white-space: nowrap;
+                    vertical-align: top;
+                }
             }
         }
     }

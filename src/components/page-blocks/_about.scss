@@ -11,6 +11,10 @@
         flex-basis: calc(25% - 25px);
         width: 25%;
         text-align: center;
+        @include _760 {
+            width: 46%;
+            flex-basis: 46%;
+        }
     }
 
     &__name {
