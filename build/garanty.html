@@ -572,6 +572,10 @@
                 <input type="email" id="feedback-email" name="email">
             </div>
             <div class="popup__row">
+                <label for="feedback-message">Ваше сообщение</label>
+                <textarea class="" name="" id="" cols="30" rows="3"></textarea>
+            </div>
+            <div class="popup__row">
                 <div class="checkbox">
                     <input type="checkbox" id="agreed">
                     <label for="agreed">Даю согласие на обработку <a href="#">персональных данных</a></label>
@@ -584,7 +588,7 @@
     </div>
 </div>
 
-<div class="popup" id="dialog-question">
+<div class="popup popup--min" id="dialog-question">
     <h3 class="popup__title">Задать свой вопрос</h3>
     <div class="popup__desc">
         Задайте нам свой вопрос, воспользовавшись данной формой.<br>
@@ -612,7 +616,7 @@
     </form>
 </div>
 
-<div class="popup" id="dialog-sign-in">
+<div class="popup popup--min" id="dialog-sign-in">
     <h3 class="popup__title">Вход</h3>
     <div class="popup__desc">Заполните форму для входа в личный кабинет</div>
     <form action="">
@@ -626,13 +630,37 @@
         </div>
         <button class="btn btn-large btn-primary">Отправить</button>
         <div class="popup__footer">
-            У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox
-                data-src="#dialog-sign-up">Регистрация</button>
+            <p>
+                У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox
+                    data-src="#dialog-sign-up">Регистрация</button>
+            </p>
+            <p>
+                Забыли пароль? <button type="button" class="btn btn-link" data-fancybox
+                    data-src="#dialog-recovery">Восстановить</button>
+            </p>
         </div>
     </form>
 </div>
 
-<div class="popup" id="dialog-sign-up">
+<div class="popup popup--min" id="dialog-recovery">
+    <h3 class="popup__title">Восстановление пароля</h3>
+    <div class="popup__desc">Ссылка для восстановления пароля придет на&nbsp;указанную почту</div>
+    <form action="">
+        <div class="popup__row">
+            <label for="recovery-email">Email</label>
+            <input type="email" id="recovery-email" name="email">
+        </div>
+        <button class="btn btn-large btn-primary">Отправить</button>
+        <div class="popup__footer">
+            <p>
+                У вас нет аккаунта? <button type="button" class="btn btn-link" data-fancybox
+                    data-src="#dialog-sign-up">Регистрация</button>
+            </p>
+        </div>
+    </form>
+</div>
+
+<div class="popup popup--min" id="dialog-sign-up">
     <h3 class="popup__title">Cоздать аккаунт</h3>
     <div class="popup__desc">Создайте личный кабинет </div>
     <form action="">

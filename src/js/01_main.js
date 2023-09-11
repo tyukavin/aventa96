@@ -30,8 +30,13 @@ $(document).ready(function() {
                 "close",
             ],
         },
+        defaults: {
+            closeExisting: true,
+        },
         dragToClose: false
     });
+
+    Fancybox.defaults.closeExisting = true;
 
     $(".js-modal-close").click(function() {
 

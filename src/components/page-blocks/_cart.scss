@@ -180,6 +180,17 @@
             color: #7E7E7E;
         }
     }
+
+    .btn {
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+
+        img {
+            margin-right: 8px;
+            width: 25px;
+        }
+    }
 }
 
 .cart-pay-tabs {
@@ -195,6 +206,7 @@
         font-size: 12px;
         text-align: center;
         padding: 5px 0;
+        width: 109px;
 
         &.active {
             border-color: #2F69FF;
@@ -207,6 +219,7 @@
 
         .caption {
             margin-top: 2px;
+            white-space: nowrap;
         }
     }
 }
@@ -277,6 +290,10 @@
 
     &__content {
         margin-right: 40px;
+
+        .card-info__more {
+            margin-bottom: 15px;
+        }
     }
 
     &__inner {
@@ -306,6 +323,10 @@
         .value {
             font-weight: 700;
         }
+    }
+
+    .value {
+        white-space: nowrap;
     }
 }
 

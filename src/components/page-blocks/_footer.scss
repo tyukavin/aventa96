@@ -16,13 +16,14 @@
     ul {
         list-style: none;
         padding: 0;
+        margin-bottom: 0;
     }
 
     .footer-content {
         background-color: #343C4B;
 
         &__inner {
-            padding: 30px 0 65px;
+            padding: 30px 0;
             display: flex;
             @include _760 {
                 flex-direction: column;

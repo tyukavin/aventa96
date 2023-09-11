@@ -11,6 +11,10 @@
     display: none;
     min-width: 600px;
 
+    &--min {
+        max-width: 600px;
+    }
+
     &--wide {
         min-width: 800px;
     }
@@ -43,6 +47,10 @@
     &__footer {
         margin-top: 40px;
         text-align: center;
+
+        p:last-of-type {
+            margin-bottom: 0;
+        }
     }
 
     form {
@@ -63,6 +71,10 @@
         padding: 15px 20px;
         font-weight: 600;
         width: 100%;
+    }
+
+    textarea {
+        resize: none;
     }
 
     .btn-link {

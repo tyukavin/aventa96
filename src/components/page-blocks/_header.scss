@@ -516,7 +516,7 @@
     display: none;
     left: 0;
     right: 0;
-    height: 82vh;
+    height: 70vh;
     z-index: 99;
 
     &.show {
@@ -533,6 +533,8 @@
     .menu-aside {
         display: flex;
         flex-direction: column;
+        height: 100%;
+        overflow-y: auto;
 
         &__item {
             color: #000;

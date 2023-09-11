@@ -263,7 +263,7 @@
     &__img {
         border-radius: 15px;
         overflow: hidden;
-        margin-bottom: 30px;
+        margin-bottom: 20px;
 
         img {
             height: 100%;
@@ -314,6 +314,37 @@
         row-gap: 20px;
         @include _760 {
             flex-wrap: wrap;
+        }
+    }
+}
+
+.catalog-actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+
+    &__left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .btn {
+        color: #a3a3a3;
+        height: 35px;
+        width: 35px;
+        padding: 2px;
+
+        &.active {
+            color: #050505;
+        }
+
+        svg {
+            display: inline-block;
+            height: 100%;
+            width: 100%;
+            fill: currentColor;
         }
     }
 }
